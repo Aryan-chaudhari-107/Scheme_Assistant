@@ -1,0 +1,31 @@
+{
+  "scheme_id": "pm-kusum",
+  "name": "PM-KUSUM (Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan)",
+  "category": "Agriculture",
+  "ministry": "Ministry of New and Renewable Energy",
+  "description": "A renewable energy scheme helping farmers install solar-powered irrigation pumps and set up small solar power plants on their land, reducing dependency on diesel and grid electricity while creating an additional income stream by selling surplus power to DISCOMs.",
+  "benefits": "Subsidy of up to 60% (30% central + 30% state) on solar pump installation, with an additional 30% available as a bank loan so the farmer pays only around 10% from their own pocket. Farmers with grid-connected solar plants can sell surplus electricity to DISCOMs at a feed-in-tariff for additional income.",
+  "eligibility": [
+    "Individual farmers who own agricultural land",
+    "Groups of farmers, cooperatives, panchayats, Farmer Producer Organisations (FPOs), and Water User Associations (WUAs) can also apply",
+    "Farmers without their own equity can partner with developers or local DISCOMs",
+    "Applicant must have valid land ownership documents or a lease/land-use agreement"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": null,
+    "occupation": "farmer",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Land ownership documents or valid lease/land-use certificate",
+    "Bank account details (for DBT subsidy)",
+    "Recent passport-size photograph",
+    "Electricity connection details (for grid-connected components)"
+  ],
+  "how_to_apply": "Apply online at the official PM-KUSUM portal (pmkusum.mnre.gov.in) via 'Farmer Registration', filling in land and equipment details and uploading required documents. Some states also allow offline applications through DISCOMs or local agriculture departments.",
+  "official_link": "https://pmkusum.mnre.gov.in",
+  "state": "All India"
+}

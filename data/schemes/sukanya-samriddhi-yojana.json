@@ -1,0 +1,31 @@
+{
+  "scheme_id": "sukanya-samriddhi-yojana",
+  "name": "Sukanya Samriddhi Yojana (SSY)",
+  "category": "Women & Child",
+  "ministry": "Ministry of Finance (Department of Economic Affairs)",
+  "description": "A government-backed small savings scheme launched under the 'Beti Bachao, Beti Padhao' initiative, helping parents and legal guardians build a financial corpus for a girl child's higher education and marriage through long-term, tax-free savings.",
+  "benefits": "Attractive interest rate (8.2% p.a. for Q2 FY 2026-27, compounded annually and revised quarterly), triple tax exemption under Section 80C (deposits, interest earned, and maturity amount are all tax-free). Deposits allowed from Rs. 250 to Rs. 1.5 lakh per financial year for 15 years, with the account maturing 21 years after opening.",
+  "eligibility": [
+    "Account can be opened by a parent or legal guardian in the name of a girl child below 10 years of age",
+    "Maximum of two SSY accounts per family, one per girl child (exceptions for twins/triplets)",
+    "Available only to Indian citizen girl children",
+    "Account can be opened at any time from the birth of the girl child until she turns 10"
+  ],
+  "eligibility_rules": {
+    "min_age": 0,
+    "max_age": 10,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Girl child's birth certificate",
+    "Identity proof of parent/guardian (Aadhaar, passport, or voter ID)",
+    "Address proof of parent/guardian",
+    "SSY account opening application form (Form-1)",
+    "Passport-size photographs of the girl child and parent/guardian"
+  ],
+  "how_to_apply": "Visit any authorised bank branch or post office with the required documents, fill the SSY application form (Form-1), and make the first deposit (minimum Rs. 250) via cash, cheque, or demand draft.",
+  "official_link": "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=89",
+  "state": "All India"
+}

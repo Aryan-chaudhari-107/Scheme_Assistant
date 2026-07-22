@@ -1,0 +1,31 @@
+{
+  "scheme_id": "pm-fasal-bima-yojana",
+  "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+  "category": "Agriculture",
+  "ministry": "Ministry of Agriculture and Farmers Welfare",
+  "description": "A crop insurance scheme providing financial support to farmers in the event of crop failure due to natural calamities, pests, or diseases, at a very low premium cost to the farmer.",
+  "benefits": "Comprehensive risk cover against crop loss from drought, flood, hailstorm, cyclone, pests and disease, with compensation credited directly to the farmer's Aadhaar-linked bank account via DBT. Farmers pay only 1.5-2% premium for Kharif crops and up to 5% for horticulture/commercial crops; the rest is subsidized by the Central and State governments.",
+  "eligibility": [
+    "All farmers growing notified crops in notified areas, including sharecroppers and tenant farmers",
+    "Loanee farmers (with crop loans) are automatically covered; non-loanee farmers can enroll voluntarily",
+    "Farmer must have an insurable interest in the crop being insured",
+    "Applicant must have a KYC-compliant Aadhaar card"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": 70,
+    "max_income": null,
+    "occupation": "farmer",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card (mandatory)",
+    "Aadhaar-linked bank passbook",
+    "Land ownership records (ROR/Khasra-Khaata) or tenancy/sharecropping agreement for tenant farmers",
+    "Sowing certificate/crop declaration",
+    "Recent passport-size photograph"
+  ],
+  "how_to_apply": "Apply online at pmfby.gov.in under 'Farmer Corner' by registering with Aadhaar-verified mobile number, entering land and crop details, uploading documents, and paying the premium. Alternatively, apply offline at the nearest bank branch, Common Service Centre (CSC), or agriculture office. Loanee farmers are enrolled automatically by their bank.",
+  "official_link": "https://pmfby.gov.in",
+  "state": "All India"
+}

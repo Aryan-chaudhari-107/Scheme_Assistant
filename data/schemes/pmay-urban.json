@@ -1,0 +1,33 @@
+{
+  "scheme_id": "pmay-urban",
+  "name": "Pradhan Mantri Awas Yojana - Urban 2.0 (PMAY-U)",
+  "category": "Housing",
+  "ministry": "Ministry of Housing and Urban Affairs",
+  "description": "A housing scheme providing financial assistance to eligible urban households belonging to the EWS, LIG, and MIG income categories to construct, buy, or improve a pucca house, under the 'Housing for All' mission.",
+  "benefits": "Beneficiary-Led Construction (BLC): financial assistance up to Rs. 2.5 lakh to build a new pucca house on own land. Affordable Housing in Partnership (AHP): allotment of ready-built affordable houses. Interest Subsidy Scheme (ISS): subsidy on home loans for purchase/construction, for EWS, LIG and MIG categories.",
+  "eligibility": [
+    "Applicant must not own a pucca house anywhere in India",
+    "Economically Weaker Section (EWS): annual household income up to Rs. 3 lakh",
+    "Low Income Group (LIG): annual household income Rs. 3-6 lakh",
+    "Middle Income Group (MIG): annual household income Rs. 6-9 lakh",
+    "Priority to widows, single women, senior citizens, transgender persons, persons with disabilities, and SC/ST/minority households",
+    "Beneficiary must not have availed benefits under any other housing scheme"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": 900000,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Income proof/certificate",
+    "Bank account details",
+    "Proof of not owning a pucca house (self-declaration)",
+    "Land ownership documents (for Beneficiary-Led Construction)"
+  ],
+  "how_to_apply": "Apply online through the official PMAY-Urban portal (pmay-urban.gov.in) or through your Urban Local Body (ULB) during an active application/survey window. Income category and eligibility are verified before assistance is sanctioned.",
+  "official_link": "https://pmay-urban.gov.in",
+  "state": "All India"
+}

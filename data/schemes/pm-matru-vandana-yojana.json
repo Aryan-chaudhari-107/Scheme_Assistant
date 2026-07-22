@@ -1,0 +1,30 @@
+{
+  "scheme_id": "pm-matru-vandana-yojana",
+  "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+  "category": "Women & Child",
+  "ministry": "Ministry of Women and Child Development",
+  "description": "A maternity benefit scheme providing cash incentives to pregnant and lactating women to compensate for wage loss around childbirth and to promote proper nutrition, antenatal care, institutional delivery, and early childhood immunisation.",
+  "benefits": "Rs. 5,000 for the first living child, paid in 2 installments tied to registration and health milestones (ANC visits, delivery proof). Under PMMVY 2.0, an additional Rs. 6,000 is paid if the second child is a girl, bringing the total to up to Rs. 11,000. All amounts are transferred via DBT to the mother's Aadhaar-linked bank account.",
+  "eligibility": [
+    "Pregnant and lactating women, for their first living child (any gender) or second child if a girl",
+    "Applicant must be 19 years of age or older",
+    "Excludes women in regular Central/State Government or PSU employment, or already receiving similar paid maternity benefits",
+    "Registration (Form 1A) must be filed within 150 days of the Last Menstrual Period (LMP); late registration forfeits eligibility"
+  ],
+  "eligibility_rules": {
+    "min_age": 19,
+    "max_age": null,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card of the mother",
+    "Mother and Child Protection (MCP) card",
+    "Bank account passbook (Aadhaar-linked)",
+    "Proof of pregnancy/delivery as applicable (Form 1B after delivery, Form 1C after first immunisation)"
+  ],
+  "how_to_apply": "Register at the nearest Anganwadi Centre or approved health facility, or online via the PMMVY portal (pmmvy.wcd.gov.in), using the MCP card, Aadhaar, and bank details. The Anganwadi worker enters details into the PMMVY Common Application Software (CAS); status can be tracked on the CAS portal.",
+  "official_link": "https://pmmvy.wcd.gov.in",
+  "state": "All India"
+}

@@ -1,0 +1,31 @@
+{
+  "scheme_id": "ayushman-bharat-pmjay",
+  "name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PMJAY)",
+  "category": "Health",
+  "ministry": "Ministry of Health and Family Welfare (run by National Health Authority)",
+  "description": "A national health protection scheme providing free, cashless hospitalization cover for secondary and tertiary care to economically vulnerable families identified under SECC 2011, and universally to all senior citizens aged 70 and above regardless of income.",
+  "benefits": "Cashless and paperless health cover of Rs. 5 lakh per family per year for secondary and tertiary hospitalization at empanelled hospitals, covering pre-existing conditions from day one with no waiting period. Free at the point of care - empanelled hospitals cannot charge beneficiaries.",
+  "eligibility": [
+    "Families identified as poor or deprived under SECC 2011 rural/urban deprivation criteria",
+    "All citizens aged 70 years or above are covered regardless of income (AB-PMJAY Vay Vandana)",
+    "Excludes households owning a two/three/four-wheeler or motorised fishing boat, government employees, and families with monthly income above Rs. 10,000 (except the 70+ universal category)",
+    "Senior citizens already covered under CGHS/ECHS must choose one scheme; cannot avail both simultaneously"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": 10000,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Ration card or household ID",
+    "Proof of identity (voter ID, passport, or driver's license)",
+    "Proof of residence",
+    "Family member details for household registration"
+  ],
+  "how_to_apply": "Check eligibility and register online at pmjay.gov.in or via the Ayushman Bharat app using Aadhaar-based e-KYC. Alternatively, visit any empanelled hospital's Ayushman Mitra desk or nearest Common Service Centre (CSC) with Aadhaar and ration card to complete registration and get the e-card.",
+  "official_link": "https://pmjay.gov.in",
+  "state": "All India"
+}

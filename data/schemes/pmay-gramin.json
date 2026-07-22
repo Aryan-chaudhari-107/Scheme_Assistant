@@ -1,0 +1,31 @@
+{
+  "scheme_id": "pmay-gramin",
+  "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+  "category": "Housing",
+  "ministry": "Ministry of Rural Development",
+  "description": "A rural housing scheme providing financial assistance to houseless households and those living in kutcha/dilapidated houses to construct a pucca house, with beneficiaries selected from verified SECC 2011 and Awaas+ survey data.",
+  "benefits": "Financial assistance paid in installments tied to construction progress (verified via geo-tagged photos), plus convergence support of around 90-95 days of MGNREGA wages for construction labour and assistance for toilet construction under Swachh Bharat Mission.",
+  "eligibility": [
+    "Household is houseless or lives in a house with kutcha walls and kutcha roof (0, 1, or 2 rooms)",
+    "Household must appear in the SECC 2011 / Awaas+ survey data, verified by the gram sabha",
+    "Priority to SC/ST households, minorities, widows, persons with disabilities, freed bonded labourers, and families of martyred defence/paramilitary personnel",
+    "Owning a motorised two-wheeler is an automatic exclusion under PMAY-G rules"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Bank account details (linked to Aadhaar)",
+    "MGNREGA job card (if available)",
+    "Swachh Bharat Mission number (if available)",
+    "Household entry proof in SECC 2011 / Awaas+ list"
+  ],
+  "how_to_apply": "Verify inclusion in the Awaas+/SECC list at your gram panchayat; the panchayat secretary or block office initiates registration on pmayg.nic.in. If missed, request inclusion during an ongoing Awaas+ survey window through the gram sabha.",
+  "official_link": "https://pmayg.nic.in",
+  "state": "All India"
+}

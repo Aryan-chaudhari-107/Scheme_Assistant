@@ -1,0 +1,31 @@
+{
+  "scheme_id": "pm-ujjwala-yojana",
+  "name": "Pradhan Mantri Ujjwala Yojana (PMUY 2.0)",
+  "category": "Housing/Household",
+  "ministry": "Ministry of Petroleum and Natural Gas",
+  "description": "A scheme providing free LPG gas connections to adult women from economically weaker households, replacing polluting cooking fuels like firewood and coal to protect the health of women and children and reduce indoor air pollution.",
+  "benefits": "Free LPG connection in the woman's name with a deposit-free cylinder (5 kg or 14.2 kg) and a free stove; first refill provided free. Beneficiaries also receive a targeted DBT subsidy of Rs. 300 per 14.2 kg cylinder refill for up to 12 refills annually.",
+  "eligibility": [
+    "Applicant must be an adult woman (18 years or above) from a poor/BPL household without an existing LPG connection",
+    "Antyodaya Anna Yojana (AAY) ration card holders and SECC-listed households automatically qualify",
+    "Households without formal documentation can establish BPL status via a 14-point self-declaration form",
+    "Special provision for migrant workers, who may apply with a self-declaration of family composition and address in lieu of formal address proof"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": null,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card (mandatory for e-KYC)",
+    "Ration card (or 14-point self-declaration if unavailable)",
+    "Bank account details (for DBT subsidy)",
+    "Passport-size photograph",
+    "Address proof (or self-declaration for migrant workers)"
+  ],
+  "how_to_apply": "Apply online at pmuy.gov.in or visit the nearest LPG distributor (Indane, Bharat Gas, or HP Gas) with Aadhaar and ration card for biometric verification. The UMANG app also supports face-authentication based application.",
+  "official_link": "https://pmuy.gov.in",
+  "state": "All India"
+}
