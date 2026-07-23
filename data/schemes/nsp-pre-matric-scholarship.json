@@ -1,0 +1,31 @@
+{
+  "scheme_id": "nsp-pre-matric-scholarship",
+  "name": "National Scholarship Portal - Pre-Matric Scholarship (SC/ST/OBC)",
+  "category": "Education",
+  "ministry": "Ministry of Social Justice and Empowerment / Ministry of Tribal Affairs",
+  "description": "A central scholarship scheme supporting SC, ST, and OBC students studying in Class 1 to 10, reducing dropout rates by covering basic education-related expenses, applied for through the single-window National Scholarship Portal.",
+  "benefits": "Monthly scholarship typically ranging from Rs. 150 to Rs. 550 depending on whether the student is a day scholar or hosteller, plus an annual ad-hoc grant and book allowance, paid directly to the student's (or parent's) Aadhaar-linked bank account.",
+  "eligibility": [
+    "Student must belong to SC, ST, or OBC category",
+    "Enrolled in Class 1 to Class 10 in a recognised school",
+    "Family income must be within the scheme's prescribed ceiling",
+    "Aadhaar and Aadhaar-linked mobile number required for One Time Registration (OTR) on NSP"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": 250000,
+    "occupation": "student",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Caste certificate (SC/ST/OBC)",
+    "Income certificate",
+    "School enrollment/bonafide certificate",
+    "Bank account passbook (Aadhaar-linked)"
+  ],
+  "how_to_apply": "Complete One Time Registration (OTR) on the National Scholarship Portal (scholarships.gov.in) using Aadhaar and mobile number, then apply under the relevant Pre-Matric scheme. Application must be verified by the school/institution before final approval.",
+  "official_link": "https://scholarships.gov.in",
+  "state": "All India"
+}

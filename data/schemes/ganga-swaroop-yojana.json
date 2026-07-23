@@ -1,0 +1,32 @@
+{
+  "scheme_id": "ganga-swaroop-yojana",
+  "name": "Ganga Swaroop Beheno Ne Sahayata Yojana (Gujarat Widow Pension Scheme)",
+  "category": "Women/Pension",
+  "ministry": "Gujarat Women and Child Development Department",
+  "description": "A Gujarat state pension scheme (formerly known as Vidhva Sahay Yojna) providing monthly financial assistance to widowed women in the state to promote their self-reliance and dignity, implemented at the district level by the Mamlatdar.",
+  "benefits": "Monthly pension of Rs. 1,250 deposited directly into the beneficiary's bank or post office account, typically in the first week of every month via Direct Benefit Transfer (DBT).",
+  "eligibility": [
+    "Applicant must be a widowed woman and a permanent resident of Gujarat",
+    "Applicant must be aged 18 years or above (typically 18-40 for this scheme, migrating to old age pension thereafter in some cases)",
+    "Annual family income must not exceed Rs. 1,20,000 in rural areas and Rs. 1,50,000 in urban areas",
+    "Benefit is discontinued if the woman remarries"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": 40,
+    "max_income": 150000,
+    "occupation": "any",
+    "state": "Gujarat"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Husband's death certificate",
+    "Residence proof of Gujarat",
+    "Income certificate",
+    "Bank/post office account passbook",
+    "Passport-size photograph"
+  ],
+  "how_to_apply": "Apply directly at the Taluka Mamlatdar's office with the required documents, or through the local Women and Child Development Department office. Application is verified and approved pension is credited via DBT to the registered account.",
+  "official_link": "https://wcd.gujarat.gov.in",
+  "state": "Gujarat"
+}

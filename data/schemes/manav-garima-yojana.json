@@ -1,0 +1,32 @@
+{
+  "scheme_id": "manav-garima-yojana",
+  "name": "Manav Garima Yojana (Gujarat)",
+  "category": "Employment/Self-Employment",
+  "ministry": "Gujarat Social Justice and Empowerment Department (Directorate of Scheduled Caste Welfare)",
+  "description": "A Gujarat state self-employment scheme, meaning 'Human Dignity Scheme', that provides free trade toolkits to Scheduled Caste (SC) and NT-DNT families across 28 trades so they can start or improve a small home-based business without taking a loan.",
+  "benefits": "Free trade-specific toolkit worth Rs. 4,000-5,000 (e.g. tailoring, embroidery, beauty parlour, mobile repair, cobbler, carpentry, welding, plumbing, food processing) with no repayment or interest, helping beneficiaries become self-reliant through self-employment.",
+  "eligibility": [
+    "Applicant must be a permanent resident of Gujarat and belong to the Scheduled Caste (SC) or NT-DNT category",
+    "Annual family income up to Rs. 6,00,000 (no income limit for certain most-backward SC sub-castes)",
+    "Applicant should not have already availed a similar toolkit benefit under this scheme",
+    "Willingness to pursue one of the 28 listed trades"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": 60,
+    "max_income": 600000,
+    "occupation": "self-employed/artisan",
+    "state": "Gujarat"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Caste certificate (SC/NT-DNT)",
+    "Income certificate",
+    "Residence proof (Gujarat domicile)",
+    "Passport-size photograph",
+    "Bank account details"
+  ],
+  "how_to_apply": "Apply online through the eSamaj Kalyan portal (esamajkalyan.gujarat.gov.in) by registering with Aadhaar, date of birth, caste category, and mobile number, completing OTP verification, filling in personal/family details exactly as per Aadhaar, and selecting 'Manav Garima Yojana' from the scheme list to submit the application with documents.",
+  "official_link": "https://esamajkalyan.gujarat.gov.in",
+  "state": "Gujarat"
+}

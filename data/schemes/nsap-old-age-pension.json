@@ -1,0 +1,31 @@
+{
+  "scheme_id": "nsap-old-age-pension",
+  "name": "National Social Assistance Programme - Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+  "category": "Senior Citizen Welfare",
+  "ministry": "Ministry of Rural Development",
+  "description": "A centrally sponsored social pension scheme under NSAP providing monthly financial assistance to elderly persons from Below Poverty Line (BPL) households, helping ensure a minimum standard of social security for senior citizens with no other means of support. Most state governments provide an additional top-up amount.",
+  "benefits": "Central pension of Rs. 200 per month for beneficiaries aged 60-79 years, and Rs. 500 per month for those aged 80 and above, credited directly to the beneficiary's bank or post office account via DBT. Actual amount received is often higher due to state government top-ups, which vary by state.",
+  "eligibility": [
+    "Applicant must be aged 60 years or above",
+    "Must belong to a Below Poverty Line (BPL) household, verified via SECC-2011 data or state BPL list",
+    "Some states require an income certificate in addition to or instead of BPL/SECC status",
+    "Not eligible if already receiving a similar pension from a state or Central Government scheme"
+  ],
+  "eligibility_rules": {
+    "min_age": 60,
+    "max_age": null,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Age proof (birth certificate, school leaving certificate, or Aadhaar DOB)",
+    "BPL/SECC beneficiary proof or ration card",
+    "Bank/post office account passbook (Aadhaar-linked, for DBT)",
+    "Income certificate (in states that require it)"
+  ],
+  "how_to_apply": "Apply at your Gram Panchayat (rural areas) or Urban Local Body/municipal office (urban areas), fill the NSAP application form with the required documents, and submit for verification. Applications can also be tracked on the official NSAP portal.",
+  "official_link": "https://nsap.nic.in",
+  "state": "All India"
+}

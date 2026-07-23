@@ -1,0 +1,32 @@
+{
+  "scheme_id": "pm-vishwakarma-yojana",
+  "name": "PM Vishwakarma Yojana",
+  "category": "Employment/MSME",
+  "ministry": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+  "description": "A central scheme supporting India's traditional artisans and craftspeople across 18 family-based trades (carpenters, blacksmiths, potters, goldsmiths, cobblers, tailors, and others), providing formal recognition, skill training, toolkit support, and access to collateral-free credit.",
+  "benefits": "PM Vishwakarma recognition certificate and ID card; free basic skill training (5-7 days, 40 hours) with a stipend of Rs. 500/day; toolkit incentive of Rs. 15,000 via e-RUPI voucher; collateral-free loans up to Rs. 3 lakh at just 5% interest, disbursed in stages (Rs. 1 lakh first tranche, up to Rs. 2 lakh second tranche).",
+  "eligibility": [
+    "Applicant must be an artisan or craftsperson working with hands and tools in one of the 18 recognised trades",
+    "Minimum age 18 years; no minimum years of practice required, self-declaration with photo evidence suffices",
+    "Only one member per family can enroll",
+    "Family must not have availed a similar credit-based subsidy (PMEGP, PM SVANidhi, MUDRA) in the last 5 years",
+    "Government employees and their families are not eligible"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": null,
+    "max_income": null,
+    "occupation": "artisan/craftsperson",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Address proof",
+    "Bank account details (Aadhaar-linked)",
+    "Trade self-declaration with photo evidence, verified by the local panchayat/ULB",
+    "Passport-size photograph"
+  ],
+  "how_to_apply": "Register online at pmvishwakarma.gov.in with mobile number and Aadhaar e-KYC, or visit the nearest Common Service Centre (CSC). Complete the mandatory basic training before claiming the toolkit grant or applying for the loan.",
+  "official_link": "https://pmvishwakarma.gov.in",
+  "state": "All India"
+}

@@ -1,0 +1,31 @@
+{
+  "scheme_id": "atal-pension-yojana",
+  "name": "Atal Pension Yojana (APY)",
+  "category": "Finance/Pension",
+  "ministry": "Ministry of Finance (managed by PFRDA)",
+  "description": "A government-backed voluntary pension scheme mainly aimed at workers in the unorganised sector, providing a guaranteed monthly pension after age 60 based on regular contributions made during working years.",
+  "benefits": "Guaranteed monthly pension of Rs. 1,000, Rs. 2,000, Rs. 3,000, Rs. 4,000, or Rs. 5,000 after age 60, based on the subscriber's chosen amount and age at joining. Contributions are auto-debited monthly, quarterly, or half-yearly and qualify for tax deduction under Section 80C. Spouse continuation and nominee benefits available on subscriber's death.",
+  "eligibility": [
+    "Applicant must be an Indian citizen aged 18 to 40 years",
+    "Must hold an active savings bank account or post office savings account with auto-debit facility",
+    "Aadhaar and registered mobile number required",
+    "Individual must not be (or have been) an income tax payer as of the enrolment date",
+    "NRI and OCI cardholders are not eligible"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": 40,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Bank/post office savings account passbook",
+    "Registered mobile number",
+    "Nominee details"
+  ],
+  "how_to_apply": "Visit your bank branch or post office where you hold a savings account, fill out the APY registration form, choose your desired pension amount, and submit with Aadhaar details. Can also be opened online via net banking or the e-APY portal for an Aadhaar-linked savings account.",
+  "official_link": "https://npscra.nsdl.co.in/scheme-details.php",
+  "state": "All India"
+}

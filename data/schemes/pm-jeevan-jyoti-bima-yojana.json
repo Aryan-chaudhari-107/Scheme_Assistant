@@ -1,0 +1,30 @@
+{
+  "scheme_id": "pm-jeevan-jyoti-bima-yojana",
+  "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+  "category": "Finance/Insurance",
+  "ministry": "Ministry of Finance (Jan Suraksha Schemes)",
+  "description": "A government-backed, one-year renewable term life insurance scheme offering affordable life cover to bank account holders, providing financial protection to nominees in case of the insured's death due to any cause.",
+  "benefits": "Life insurance cover of Rs. 2 lakh paid to the nominee if the insured person dies during the active policy period, for any reason (natural, illness, or accident), at a nominal annual premium of Rs. 436, auto-debited from the subscriber's bank account. Renewable every year; policy can be withdrawn anytime.",
+  "eligibility": [
+    "Applicant must be an Indian citizen aged 18 to 50 years",
+    "Must hold a savings bank or post office account with auto-debit consent",
+    "No medical examination or documentation required to join",
+    "Coverage available up to age 55, subject to annual renewal and premium payment"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": 50,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Bank/post office savings account details",
+    "Nominee details",
+    "Auto-debit consent form"
+  ],
+  "how_to_apply": "Apply through your bank's net banking or mobile banking app, or visit the bank branch/post office, select PMJJBY, provide account and nominee details, and give consent for annual auto-debit of the premium.",
+  "official_link": "https://jansuraksha.gov.in",
+  "state": "All India"
+}

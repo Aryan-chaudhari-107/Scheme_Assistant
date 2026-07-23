@@ -1,0 +1,32 @@
+{
+  "scheme_id": "mukhyamantri-gruh-yojana",
+  "name": "Mukhyamantri Gruh Yojana (Gujarat Rural Urban Housing Scheme)",
+  "category": "Housing",
+  "ministry": "Gujarat Urban Development and Urban Housing Department (implemented via Gujarat Housing Board and municipal corporations)",
+  "description": "A Gujarat state affordable housing scheme providing low-cost homes to economically weaker section (EWS), low income group (LIG), and middle income group (MIG) families, implemented through the Gujarat Housing Board and municipal corporations across the state.",
+  "benefits": "Affordable pucca housing units at subsidised cost for EWS/LIG/MIG categories, plus an interest subsidy on home loans for eligible EWS and LIG applicants purchasing houses under affordable housing schemes. Minimum down payment required is around Rs. 50,000 for EWS and Rs. 1,00,000 for LIG beneficiaries.",
+  "eligibility": [
+    "Applicant must be a resident of Gujarat and must not own a pucca house anywhere in India",
+    "EWS category: annual household income up to Rs. 3 lakh",
+    "LIG category: annual household income Rs. 3-6 lakh",
+    "MIG category: annual household income Rs. 6-10 lakh",
+    "Beneficiaries are jointly selected by banks, private developers, and the implementing housing agency"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": 1000000,
+    "occupation": "any",
+    "state": "Gujarat"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Income certificate",
+    "Residence proof (Gujarat domicile)",
+    "Proof of not owning a pucca house (self-declaration)",
+    "Bank account details"
+  ],
+  "how_to_apply": "Apply online through the Gujarat Housing Board portal or the relevant municipal corporation's affordable housing portal (Ahmedabad, Surat, Vadodara, Rajkot, Bhavnagar, etc.) during an active application window, submitting income category proof and required documents; allotment is typically done via computerized draw.",
+  "official_link": "https://gujarathousingboard.org",
+  "state": "Gujarat"
+}

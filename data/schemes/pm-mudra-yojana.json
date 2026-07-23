@@ -1,0 +1,31 @@
+{
+  "scheme_id": "pm-mudra-yojana",
+  "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+  "category": "Employment/MSME",
+  "ministry": "Ministry of Finance (run through MUDRA/Department of Financial Services)",
+  "description": "A flagship scheme offering collateral-free loans to non-corporate, non-farm micro and small enterprises, helping small business owners and entrepreneurs access formal credit to start or grow their business without pledging assets as security.",
+  "benefits": "Collateral-free loans across four categories: Shishu (up to Rs. 50,000), Kishore (Rs. 50,001-5 lakh), Tarun (Rs. 5-10 lakh), and Tarun Plus (Rs. 10-20 lakh, for repeat borrowers with a clean repayment record on an earlier Tarun loan). A MUDRA Card (RuPay debit card) is issued for flexible withdrawal of working capital.",
+  "eligibility": [
+    "Indian citizen aged 18 to 65 years, running or planning to start a non-farm, income-generating micro or small enterprise",
+    "Total credit requirement must be up to Rs. 20 lakh",
+    "Applicant must not be a loan defaulter with any bank or financial institution and should have a satisfactory credit history",
+    "Relevant skills, experience, or knowledge related to the proposed business activity may be required"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": 65,
+    "max_income": null,
+    "occupation": "small business owner/entrepreneur",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card and identity proof",
+    "Address proof (utility bill, Aadhaar, passport, or voter ID)",
+    "Business proof/plan (existing business proof or proposed activity details)",
+    "Passport-size photographs",
+    "Bank account details"
+  ],
+  "how_to_apply": "Apply online via the Udyamimitra portal (udyamimitra.in) or the JanSamarth portal, or visit any public/private sector bank/NBFC offering Mudra loans. Select the appropriate category (Shishu/Kishore/Tarun/Tarun Plus), fill the PMMY application form, submit documents, and await approval and disbursement.",
+  "official_link": "https://www.mudra.org.in",
+  "state": "All India"
+}

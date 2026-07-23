@@ -1,0 +1,30 @@
+{
+  "scheme_id": "e-shram",
+  "name": "e-Shram (National Database of Unorganised Workers)",
+  "category": "Labour/Employment",
+  "ministry": "Ministry of Labour and Employment",
+  "description": "A national registration scheme creating a unified database of unorganised sector workers (including gig and platform workers), issuing each worker a lifelong 12-digit Universal Account Number (UAN) as a single doorway to social security benefits and welfare scheme access.",
+  "benefits": "Free 12-digit lifelong UAN identity card valid across India; automatic accident insurance cover of Rs. 2 lakh (death/total disability) and Rs. 1 lakh (partial disability) under PM Suraksha Bima Yojana linkage; acts as the gateway database for direct benefit transfer during emergencies (cyclone/flood/heat-wave relief) and access to multiple welfare schemes.",
+  "eligibility": [
+    "Any Indian citizen working in the unorganised sector, aged 16 to 59 years",
+    "Must not be a member of EPFO (Employees' Provident Fund Organisation) or ESIC (Employees' State Insurance Corporation)",
+    "Must not be an income tax payer",
+    "Gig and platform workers (delivery, ride-hailing, etc.) are eligible if not covered by EPFO/ESIC"
+  ],
+  "eligibility_rules": {
+    "min_age": 16,
+    "max_age": 59,
+    "max_income": null,
+    "occupation": "unorganised sector worker",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card (linked to mobile number)",
+    "Bank account details",
+    "Self-declared occupation details",
+    "Educational qualification details (if applicable)"
+  ],
+  "how_to_apply": "Visit eshram.gov.in, click 'Register on e-Shram', verify via Aadhaar-linked mobile OTP, fill in personal, address, and occupation details, and submit. Registration is completely free. If Aadhaar is not linked to a mobile number, registration can be completed at a Common Service Centre (CSC) using biometric authentication.",
+  "official_link": "https://eshram.gov.in",
+  "state": "All India"
+}

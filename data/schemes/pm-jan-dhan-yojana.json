@@ -1,0 +1,30 @@
+{
+  "scheme_id": "pm-jan-dhan-yojana",
+  "name": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+  "category": "Finance",
+  "ministry": "Ministry of Finance (Department of Financial Services)",
+  "description": "The world's largest financial inclusion programme, allowing individuals without a bank account to open a zero-balance basic savings bank account at any bank branch or Business Correspondent (Bank Mitra), connecting the unbanked population to formal banking and government benefit transfers.",
+  "benefits": "Zero-balance savings account with no minimum balance requirement, free RuPay debit card, accidental insurance cover, overdraft facility up to Rs. 10,000 (subject to eligibility, one per household), and Direct Benefit Transfer (DBT) for government subsidies. Also serves as the gateway to insurance schemes like PMJJBY and PMSBY.",
+  "eligibility": [
+    "Any Indian citizen aged 10 years or above can open an account",
+    "No restriction based on income, occupation, or place of residence; both rural and urban residents eligible",
+    "Minors above 10 years can open accounts with guardian consent",
+    "Individuals without officially valid documents can open a Small Account after due diligence per RBI guidelines"
+  ],
+  "eligibility_rules": {
+    "min_age": 10,
+    "max_age": null,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card (preferred; no additional documents needed if provided)",
+    "Any one identity proof (voter ID, driving license, PAN, passport, etc.) if Aadhaar unavailable",
+    "Address proof (if different from Aadhaar address, or if Aadhaar not used)",
+    "Passport-size photograph"
+  ],
+  "how_to_apply": "Visit any bank branch or Bank Mitra/Business Correspondent (CSP) center with the required KYC documents, fill out the account opening form, and submit. Accounts can also be opened by converting an existing eligible savings account to a PMJDY account.",
+  "official_link": "https://pmjdy.gov.in",
+  "state": "All India"
+}

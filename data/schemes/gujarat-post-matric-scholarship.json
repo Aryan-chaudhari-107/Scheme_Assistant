@@ -1,0 +1,33 @@
+{
+  "scheme_id": "gujarat-post-matric-scholarship",
+  "name": "Gujarat Post-Matric Scholarship (SC/ST/OBC/SEBC) - Digital Gujarat Portal",
+  "category": "Education",
+  "ministry": "Gujarat Directorate of Scheduled Caste Welfare / Directorate of Developing Caste Welfare",
+  "description": "A Gujarat state scholarship programme covering students from Class 11 through postgraduate and PhD levels, supporting SC, ST, OBC/SEBC, EBC, NT-DNT, and Minority category students with tuition fee coverage and maintenance allowance, applied for through the Digital Gujarat Portal.",
+  "benefits": "Tuition fee concession in government/aided colleges plus a monthly maintenance allowance ranging from approximately Rs. 200 to Rs. 750 (DBT), with total annual awards ranging from around Rs. 940 to Rs. 2,00,000 depending on the specific scheme and course level.",
+  "eligibility": [
+    "Student must belong to SC, ST, OBC/SEBC, EBC, NT-DNT, or Minority category and be a resident of Gujarat",
+    "Enrolled in Class 11 through postgraduate/PhD level, including polytechnic, ITI, medical, and engineering courses",
+    "Minimum 33% marks required in the previous qualifying exam",
+    "Family income within prescribed limits (approx. Rs. 1 lakh for OBC to Rs. 2.5 lakh for SC/ST/SEBC categories)",
+    "Valid digital caste certificate required"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": 250000,
+    "occupation": "student",
+    "state": "Gujarat"
+  },
+  "documents_required": [
+    "Aadhaar card (linked to bank account)",
+    "Caste certificate (SC/ST/OBC/SEBC/NT-DNT)",
+    "Income certificate",
+    "Institution admission/bonafide certificate and fee structure",
+    "Previous year's mark sheet",
+    "Bank account passbook (Aadhaar-linked)"
+  ],
+  "how_to_apply": "Register and apply online at the Digital Gujarat Portal (digitalgujarat.gov.in), completing profile details, uploading documents, and submitting during the annual application window (typically opens July-September; ST students may need prior One Time Registration on the National Scholarship Portal). Renewal is required each academic year.",
+  "official_link": "https://digitalgujarat.gov.in",
+  "state": "Gujarat"
+}

@@ -1,0 +1,33 @@
+{
+  "scheme_id": "nsp-post-matric-scholarship",
+  "name": "National Scholarship Portal - Post-Matric Scholarship (SC/ST/OBC/EBC)",
+  "category": "Education",
+  "ministry": "Ministry of Social Justice and Empowerment / Ministry of Tribal Affairs",
+  "description": "A central scholarship scheme for SC, ST, OBC, and EBC students studying from Class 11 onwards (including diploma, undergraduate, postgraduate, and PhD programmes), covering maintenance allowance and compulsory institutional fees.",
+  "benefits": "Maintenance allowance (approx. Rs. 230-820/month depending on day-scholar or hosteller status) plus full reimbursement of compulsory non-refundable institutional fees; amounts and ceilings vary by category, with SC/ST students eligible for up to Rs. 2.5 lakh/year and OBC up to Rs. 1.5 lakh/year in tuition support. Paid via DBT to the Aadhaar-linked bank account through PFMS.",
+  "eligibility": [
+    "Student must belong to SC, ST, OBC, or EBC category",
+    "Enrolled in a recognised post-matric course from Class 11 onwards, including diploma, undergraduate, postgraduate, and PhD programmes",
+    "Family income must be within the scheme's prescribed ceiling (varies by category)",
+    "Must complete One Time Registration (OTR) with Aadhaar and face authentication on NSP",
+    "Scholarship must be renewed each academic year; not automatically continued"
+  ],
+  "eligibility_rules": {
+    "min_age": null,
+    "max_age": null,
+    "max_income": 250000,
+    "occupation": "student",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Caste certificate (SC/ST/OBC/EBC)",
+    "Income certificate",
+    "Institution admission/bonafide certificate and fee receipt",
+    "Previous year's mark sheet (for renewal)",
+    "Bank account passbook (Aadhaar-linked)"
+  ],
+  "how_to_apply": "Complete One Time Registration (OTR) with Aadhaar and mobile number on the National Scholarship Portal (scholarships.gov.in), select the relevant Post-Matric scheme, fill in institutional and course details, and submit for institute and state verification. Renewal is required every academic year.",
+  "official_link": "https://scholarships.gov.in",
+  "state": "All India"
+}

@@ -1,0 +1,33 @@
+{
+  "scheme_id": "vahli-dikri-yojana",
+  "name": "Vahli Dikri Yojana (Gujarat)",
+  "category": "Women & Child",
+  "ministry": "Gujarat Women and Child Development Department",
+  "description": "A Gujarat state flagship scheme (meaning 'Dear Daughter Scheme') providing staged financial assistance to families for their girl child, aimed at reducing school dropouts, promoting girls' education, and improving the child sex ratio in the state.",
+  "benefits": "Total financial assistance of Rs. 1,10,000 to Rs. 1,16,000 disbursed in stages: an amount at Class 1 admission (approx. Rs. 4,000), a further amount at Class 9 admission (approx. Rs. 6,000-10,000), and a final lump sum of around Rs. 1 lakh payable when the girl turns 18, withdrawable for higher education or marriage expenses.",
+  "eligibility": [
+    "Applicant (parent) must be a permanent resident of Gujarat",
+    "Girl child must be born on or after 02-08-2019",
+    "Applicable only for the first two girl children of a family",
+    "Annual family income must not exceed Rs. 2 lakh",
+    "Family must have an active bank account for direct transfer of benefits"
+  ],
+  "eligibility_rules": {
+    "min_age": 0,
+    "max_age": 18,
+    "max_income": 200000,
+    "occupation": "any",
+    "state": "Gujarat"
+  },
+  "documents_required": [
+    "Girl child's birth certificate",
+    "Aadhaar card of girl child and parent",
+    "Residence proof of Gujarat",
+    "Family annual income certificate",
+    "Bank account details",
+    "Recent passport-size photograph"
+  ],
+  "how_to_apply": "Collect the application form from the local Anganwadi Kendra or the District Office of the Women and Child Development Department, fill it with the required documents attached, and submit it at the same office for verification. Selected beneficiaries are notified and financial assistance is credited directly to the bank account in stages.",
+  "official_link": "https://wcd.gujarat.gov.in",
+  "state": "Gujarat"
+}

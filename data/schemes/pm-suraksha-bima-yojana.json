@@ -1,0 +1,30 @@
+{
+  "scheme_id": "pm-suraksha-bima-yojana",
+  "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+  "category": "Finance/Insurance",
+  "ministry": "Ministry of Finance (Jan Suraksha Schemes)",
+  "description": "A government-backed, one-year renewable accidental death and disability insurance scheme offering coverage to bank account holders at an extremely low premium, providing financial protection in the event of accidental death or disability.",
+  "benefits": "Accidental death cover of Rs. 2 lakh paid to the nominee, Rs. 2 lakh for total and irrecoverable disability (loss of both eyes, both hands, or both feet), and Rs. 1 lakh for partial disability (loss of one eye, one hand, or one foot), at an annual premium of just Rs. 20, auto-debited from the linked bank account. Coverage period runs 1st June to 31st May, renewable annually.",
+  "eligibility": [
+    "Applicant must be an Indian citizen aged 18 to 70 years",
+    "Must hold a savings bank or post office account with auto-debit consent",
+    "No medical examination required to join",
+    "Premium auto-debited on or before 31st May each year for continuous coverage"
+  ],
+  "eligibility_rules": {
+    "min_age": 18,
+    "max_age": 70,
+    "max_income": null,
+    "occupation": "any",
+    "state": "All India"
+  },
+  "documents_required": [
+    "Aadhaar card",
+    "Bank/post office savings account details",
+    "Nominee details",
+    "Auto-debit consent form"
+  ],
+  "how_to_apply": "Apply through your bank's net banking or mobile banking app, or visit the bank branch/post office, select PMSBY, provide account and nominee details, and give consent for annual auto-debit of the premium.",
+  "official_link": "https://jansuraksha.gov.in",
+  "state": "All India"
+}
