@@ -1,4 +1,5 @@
 chromadb
+google-genai
 anthropic
 pandas
 streamlit
