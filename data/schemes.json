@@ -1,0 +1,752 @@
+[
+  {
+    "scheme_id": "atal-pension-yojana",
+    "name": "Atal Pension Yojana (APY)",
+    "category": "Finance/Pension",
+    "ministry": "Ministry of Finance (managed by PFRDA)",
+    "description": "A government-backed voluntary pension scheme mainly aimed at workers in the unorganised sector, providing a guaranteed monthly pension after age 60 based on regular contributions made during working years.",
+    "benefits": "Guaranteed monthly pension of Rs. 1,000, Rs. 2,000, Rs. 3,000, Rs. 4,000, or Rs. 5,000 after age 60, based on the subscriber's chosen amount and age at joining. Contributions are auto-debited monthly, quarterly, or half-yearly and qualify for tax deduction under Section 80C. Spouse continuation and nominee benefits available on subscriber's death.",
+    "eligibility": [
+      "Applicant must be an Indian citizen aged 18 to 40 years",
+      "Must hold an active savings bank account or post office savings account with auto-debit facility",
+      "Aadhaar and registered mobile number required",
+      "Individual must not be (or have been) an income tax payer as of the enrolment date",
+      "NRI and OCI cardholders are not eligible"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 40,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Bank/post office savings account passbook",
+      "Registered mobile number",
+      "Nominee details"
+    ],
+    "how_to_apply": "Visit your bank branch or post office where you hold a savings account, fill out the APY registration form, choose your desired pension amount, and submit with Aadhaar details. Can also be opened online via net banking or the e-APY portal for an Aadhaar-linked savings account.",
+    "official_link": "https://www.jansuraksha.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "ayushman-bharat-pmjay",
+    "name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PMJAY)",
+    "category": "Health",
+    "ministry": "Ministry of Health and Family Welfare (run by National Health Authority)",
+    "description": "A national health protection scheme providing free, cashless hospitalization cover for secondary and tertiary care to economically vulnerable families identified under SECC 2011, and universally to all senior citizens aged 70 and above regardless of income.",
+    "benefits": "Cashless and paperless health cover of Rs. 5 lakh per family per year for secondary and tertiary hospitalization at empanelled hospitals, covering pre-existing conditions from day one with no waiting period. Free at the point of care - empanelled hospitals cannot charge beneficiaries.",
+    "eligibility": [
+      "Families identified as poor or deprived under SECC 2011 rural/urban deprivation criteria",
+      "All citizens aged 70 years or above are covered regardless of income (AB-PMJAY Vay Vandana)",
+      "Excludes households owning a two/three/four-wheeler or motorised fishing boat, government employees, and families with monthly income above Rs. 10,000 (except the 70+ universal category)",
+      "Senior citizens already covered under CGHS/ECHS must choose one scheme; cannot avail both simultaneously"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": 10000,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Ration card or household ID",
+      "Proof of identity (voter ID, passport, or driver's license)",
+      "Proof of residence",
+      "Family member details for household registration"
+    ],
+    "how_to_apply": "Check eligibility and register online at pmjay.gov.in or via the Ayushman Bharat app using Aadhaar-based e-KYC. Alternatively, visit any empanelled hospital's Ayushman Mitra desk or nearest Common Service Centre (CSC) with Aadhaar and ration card to complete registration and get the e-card.",
+    "official_link": "https://pmjay.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "e-shram",
+    "name": "e-Shram (National Database of Unorganised Workers)",
+    "category": "Labour/Employment",
+    "ministry": "Ministry of Labour and Employment",
+    "description": "A national registration scheme creating a unified database of unorganised sector workers (including gig and platform workers), issuing each worker a lifelong 12-digit Universal Account Number (UAN) as a single doorway to social security benefits and welfare scheme access.",
+    "benefits": "Free 12-digit lifelong UAN identity card valid across India; automatic accident insurance cover of Rs. 2 lakh (death/total disability) and Rs. 1 lakh (partial disability) under PM Suraksha Bima Yojana linkage; acts as the gateway database for direct benefit transfer during emergencies (cyclone/flood/heat-wave relief) and access to multiple welfare schemes.",
+    "eligibility": [
+      "Any Indian citizen working in the unorganised sector, aged 16 to 59 years",
+      "Must not be a member of EPFO (Employees' Provident Fund Organisation) or ESIC (Employees' State Insurance Corporation)",
+      "Must not be an income tax payer",
+      "Gig and platform workers (delivery, ride-hailing, etc.) are eligible if not covered by EPFO/ESIC"
+    ],
+    "eligibility_rules": {
+      "min_age": 16,
+      "max_age": 59,
+      "max_income": null,
+      "occupation": "unorganised sector worker",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card (linked to mobile number)",
+      "Bank account details",
+      "Self-declared occupation details",
+      "Educational qualification details (if applicable)"
+    ],
+    "how_to_apply": "Visit eshram.gov.in, click 'Register on e-Shram', verify via Aadhaar-linked mobile OTP, fill in personal, address, and occupation details, and submit. Registration is completely free. If Aadhaar is not linked to a mobile number, registration can be completed at a Common Service Centre (CSC) using biometric authentication.",
+    "official_link": "https://eshram.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "ganga-swaroop-yojana",
+    "name": "Ganga Swaroop Beheno Ne Sahayata Yojana (Gujarat Widow Pension Scheme)",
+    "category": "Women/Pension",
+    "ministry": "Gujarat Women and Child Development Department",
+    "description": "A Gujarat state pension scheme (formerly known as Vidhva Sahay Yojna) providing monthly financial assistance to widowed women in the state to promote their self-reliance and dignity, implemented at the district level by the Mamlatdar.",
+    "benefits": "Monthly pension of Rs. 1,250 deposited directly into the beneficiary's bank or post office account, typically in the first week of every month via Direct Benefit Transfer (DBT).",
+    "eligibility": [
+      "Applicant must be a widowed woman and a permanent resident of Gujarat",
+      "Applicant must be aged 18 years or above (typically 18-40 for this scheme, migrating to old age pension thereafter in some cases)",
+      "Annual family income must not exceed Rs. 1,20,000 in rural areas and Rs. 1,50,000 in urban areas",
+      "Benefit is discontinued if the woman remarries"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 40,
+      "max_income": 150000,
+      "occupation": "any",
+      "state": "Gujarat"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Husband's death certificate",
+      "Residence proof of Gujarat",
+      "Income certificate",
+      "Bank/post office account passbook",
+      "Passport-size photograph"
+    ],
+    "how_to_apply": "Apply directly at the Taluka Mamlatdar's office with the required documents, or through the local Women and Child Development Department office. Application is verified and approved pension is credited via DBT to the registered account.",
+    "official_link": "https://wcd.gujarat.gov.in",
+    "state": "Gujarat"
+  },
+  {
+    "scheme_id": "gujarat-post-matric-scholarship",
+    "name": "Gujarat Post-Matric Scholarship (SC/ST/OBC/SEBC) - Digital Gujarat Portal",
+    "category": "Education",
+    "ministry": "Gujarat Directorate of Scheduled Caste Welfare / Directorate of Developing Caste Welfare",
+    "description": "A Gujarat state scholarship programme covering students from Class 11 through postgraduate and PhD levels, supporting SC, ST, OBC/SEBC, EBC, NT-DNT, and Minority category students with tuition fee coverage and maintenance allowance, applied for through the Digital Gujarat Portal.",
+    "benefits": "Tuition fee concession in government/aided colleges plus a monthly maintenance allowance ranging from approximately Rs. 200 to Rs. 750 (DBT), with total annual awards ranging from around Rs. 940 to Rs. 2,00,000 depending on the specific scheme and course level.",
+    "eligibility": [
+      "Student must belong to SC, ST, OBC/SEBC, EBC, NT-DNT, or Minority category and be a resident of Gujarat",
+      "Enrolled in Class 11 through postgraduate/PhD level, including polytechnic, ITI, medical, and engineering courses",
+      "Minimum 33% marks required in the previous qualifying exam",
+      "Family income within prescribed limits (approx. Rs. 1 lakh for OBC to Rs. 2.5 lakh for SC/ST/SEBC categories)",
+      "Valid digital caste certificate required"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": 250000,
+      "occupation": "student",
+      "state": "Gujarat"
+    },
+    "documents_required": [
+      "Aadhaar card (linked to bank account)",
+      "Caste certificate (SC/ST/OBC/SEBC/NT-DNT)",
+      "Income certificate",
+      "Institution admission/bonafide certificate and fee structure",
+      "Previous year's mark sheet",
+      "Bank account passbook (Aadhaar-linked)"
+    ],
+    "how_to_apply": "Register and apply online at the Digital Gujarat Portal (digitalgujarat.gov.in), completing profile details, uploading documents, and submitting during the annual application window (typically opens July-September; ST students may need prior One Time Registration on the National Scholarship Portal). Renewal is required each academic year.",
+    "official_link": "https://digitalgujarat.gov.in",
+    "state": "Gujarat"
+  },
+  {
+    "scheme_id": "manav-garima-yojana",
+    "name": "Manav Garima Yojana (Gujarat)",
+    "category": "Employment/Self-Employment",
+    "ministry": "Gujarat Social Justice and Empowerment Department (Directorate of Scheduled Caste Welfare)",
+    "description": "A Gujarat state self-employment scheme, meaning 'Human Dignity Scheme', that provides free trade toolkits to Scheduled Caste (SC) and NT-DNT families across 28 trades so they can start or improve a small home-based business without taking a loan.",
+    "benefits": "Free trade-specific toolkit worth Rs. 4,000-5,000 (e.g. tailoring, embroidery, beauty parlour, mobile repair, cobbler, carpentry, welding, plumbing, food processing) with no repayment or interest, helping beneficiaries become self-reliant through self-employment.",
+    "eligibility": [
+      "Applicant must be a permanent resident of Gujarat and belong to the Scheduled Caste (SC) or NT-DNT category",
+      "Annual family income up to Rs. 6,00,000 (no income limit for certain most-backward SC sub-castes)",
+      "Applicant should not have already availed a similar toolkit benefit under this scheme",
+      "Willingness to pursue one of the 28 listed trades"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 60,
+      "max_income": 600000,
+      "occupation": "self-employed/artisan",
+      "state": "Gujarat"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/NT-DNT)",
+      "Income certificate",
+      "Residence proof (Gujarat domicile)",
+      "Passport-size photograph",
+      "Bank account details"
+    ],
+    "how_to_apply": "Apply online through the eSamaj Kalyan portal (esamajkalyan.gujarat.gov.in) by registering with Aadhaar, date of birth, caste category, and mobile number, completing OTP verification, filling in personal/family details exactly as per Aadhaar, and selecting 'Manav Garima Yojana' from the scheme list to submit the application with documents.",
+    "official_link": "https://esamajkalyan.gujarat.gov.in",
+    "state": "Gujarat"
+  },
+  {
+    "scheme_id": "mukhyamantri-gruh-yojana",
+    "name": "Mukhyamantri Gruh Yojana (Gujarat Rural Urban Housing Scheme)",
+    "category": "Housing",
+    "ministry": "Gujarat Urban Development and Urban Housing Department (implemented via Gujarat Housing Board and municipal corporations)",
+    "description": "A Gujarat state affordable housing scheme providing low-cost homes to economically weaker section (EWS), low income group (LIG), and middle income group (MIG) families, implemented through the Gujarat Housing Board and municipal corporations across the state.",
+    "benefits": "Affordable pucca housing units at subsidised cost for EWS/LIG/MIG categories, plus an interest subsidy on home loans for eligible EWS and LIG applicants purchasing houses under affordable housing schemes. Minimum down payment required is around Rs. 50,000 for EWS and Rs. 1,00,000 for LIG beneficiaries.",
+    "eligibility": [
+      "Applicant must be a resident of Gujarat and must not own a pucca house anywhere in India",
+      "EWS category: annual household income up to Rs. 3 lakh",
+      "LIG category: annual household income Rs. 3-6 lakh",
+      "MIG category: annual household income Rs. 6-10 lakh",
+      "Beneficiaries are jointly selected by banks, private developers, and the implementing housing agency"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": 1000000,
+      "occupation": "any",
+      "state": "Gujarat"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Income certificate",
+      "Residence proof (Gujarat domicile)",
+      "Proof of not owning a pucca house (self-declaration)",
+      "Bank account details"
+    ],
+    "how_to_apply": "Apply online through the Gujarat Housing Board portal or the relevant municipal corporation's affordable housing portal (Ahmedabad, Surat, Vadodara, Rajkot, Bhavnagar, etc.) during an active application window, submitting income category proof and required documents; allotment is typically done via computerized draw.",
+    "official_link": "https://gujarathousingboard.gujarat.gov.in",
+    "state": "Gujarat"
+  },
+  {
+    "scheme_id": "nsap-old-age-pension",
+    "name": "National Social Assistance Programme - Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+    "category": "Senior Citizen Welfare",
+    "ministry": "Ministry of Rural Development",
+    "description": "A centrally sponsored social pension scheme under NSAP providing monthly financial assistance to elderly persons from Below Poverty Line (BPL) households, helping ensure a minimum standard of social security for senior citizens with no other means of support. Most state governments provide an additional top-up amount.",
+    "benefits": "Central pension of Rs. 200 per month for beneficiaries aged 60-79 years, and Rs. 500 per month for those aged 80 and above, credited directly to the beneficiary's bank or post office account via DBT. Actual amount received is often higher due to state government top-ups, which vary by state.",
+    "eligibility": [
+      "Applicant must be aged 60 years or above",
+      "Must belong to a Below Poverty Line (BPL) household, verified via SECC-2011 data or state BPL list",
+      "Some states require an income certificate in addition to or instead of BPL/SECC status",
+      "Not eligible if already receiving a similar pension from a state or Central Government scheme"
+    ],
+    "eligibility_rules": {
+      "min_age": 60,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Age proof (birth certificate, school leaving certificate, or Aadhaar DOB)",
+      "BPL/SECC beneficiary proof or ration card",
+      "Bank/post office account passbook (Aadhaar-linked, for DBT)",
+      "Income certificate (in states that require it)"
+    ],
+    "how_to_apply": "Apply at your Gram Panchayat (rural areas) or Urban Local Body/municipal office (urban areas), fill the NSAP application form with the required documents, and submit for verification. Applications can also be tracked on the official NSAP portal.",
+    "official_link": "https://nsap.nic.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "nsp-post-matric-scholarship",
+    "name": "National Scholarship Portal - Post-Matric Scholarship (SC/ST/OBC/EBC)",
+    "category": "Education",
+    "ministry": "Ministry of Social Justice and Empowerment / Ministry of Tribal Affairs",
+    "description": "A central scholarship scheme for SC, ST, OBC, and EBC students studying from Class 11 onwards (including diploma, undergraduate, postgraduate, and PhD programmes), covering maintenance allowance and compulsory institutional fees.",
+    "benefits": "Maintenance allowance (approx. Rs. 230-820/month depending on day-scholar or hosteller status) plus full reimbursement of compulsory non-refundable institutional fees; amounts and ceilings vary by category, with SC/ST students eligible for up to Rs. 2.5 lakh/year and OBC up to Rs. 1.5 lakh/year in tuition support. Paid via DBT to the Aadhaar-linked bank account through PFMS.",
+    "eligibility": [
+      "Student must belong to SC, ST, OBC, or EBC category",
+      "Enrolled in a recognised post-matric course from Class 11 onwards, including diploma, undergraduate, postgraduate, and PhD programmes",
+      "Family income must be within the scheme's prescribed ceiling (varies by category)",
+      "Must complete One Time Registration (OTR) with Aadhaar and face authentication on NSP",
+      "Scholarship must be renewed each academic year; not automatically continued"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": 250000,
+      "occupation": "student",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST/OBC/EBC)",
+      "Income certificate",
+      "Institution admission/bonafide certificate and fee receipt",
+      "Previous year's mark sheet (for renewal)",
+      "Bank account passbook (Aadhaar-linked)"
+    ],
+    "how_to_apply": "Complete One Time Registration (OTR) with Aadhaar and mobile number on the National Scholarship Portal (scholarships.gov.in), select the relevant Post-Matric scheme, fill in institutional and course details, and submit for institute and state verification. Renewal is required every academic year.",
+    "official_link": "https://scholarships.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "nsp-pre-matric-scholarship",
+    "name": "National Scholarship Portal - Pre-Matric Scholarship (SC/ST/OBC)",
+    "category": "Education",
+    "ministry": "Ministry of Social Justice and Empowerment / Ministry of Tribal Affairs",
+    "description": "A central scholarship scheme supporting SC, ST, and OBC students studying in Class 1 to 10, reducing dropout rates by covering basic education-related expenses, applied for through the single-window National Scholarship Portal.",
+    "benefits": "Monthly scholarship typically ranging from Rs. 150 to Rs. 550 depending on whether the student is a day scholar or hosteller, plus an annual ad-hoc grant and book allowance, paid directly to the student's (or parent's) Aadhaar-linked bank account.",
+    "eligibility": [
+      "Student must belong to SC, ST, or OBC category",
+      "Enrolled in Class 1 to Class 10 in a recognised school",
+      "Family income must be within the scheme's prescribed ceiling",
+      "Aadhaar and Aadhaar-linked mobile number required for One Time Registration (OTR) on NSP"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": 250000,
+      "occupation": "student",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST/OBC)",
+      "Income certificate",
+      "School enrollment/bonafide certificate",
+      "Bank account passbook (Aadhaar-linked)"
+    ],
+    "how_to_apply": "Complete One Time Registration (OTR) on the National Scholarship Portal (scholarships.gov.in) using Aadhaar and mobile number, then apply under the relevant Pre-Matric scheme. Application must be verified by the school/institution before final approval.",
+    "official_link": "https://scholarships.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-fasal-bima-yojana",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "Agriculture",
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "description": "A crop insurance scheme providing financial support to farmers in the event of crop failure due to natural calamities, pests, or diseases, at a very low premium cost to the farmer.",
+    "benefits": "Comprehensive risk cover against crop loss from drought, flood, hailstorm, cyclone, pests and disease, with compensation credited directly to the farmer's Aadhaar-linked bank account via DBT. Farmers pay only 1.5-2% premium for Kharif crops and up to 5% for horticulture/commercial crops; the rest is subsidized by the Central and State governments.",
+    "eligibility": [
+      "All farmers growing notified crops in notified areas, including sharecroppers and tenant farmers",
+      "Loanee farmers (with crop loans) are automatically covered; non-loanee farmers can enroll voluntarily",
+      "Farmer must have an insurable interest in the crop being insured",
+      "Applicant must have a KYC-compliant Aadhaar card"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 70,
+      "max_income": null,
+      "occupation": "farmer",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card (mandatory)",
+      "Aadhaar-linked bank passbook",
+      "Land ownership records (ROR/Khasra-Khaata) or tenancy/sharecropping agreement for tenant farmers",
+      "Sowing certificate/crop declaration",
+      "Recent passport-size photograph"
+    ],
+    "how_to_apply": "Apply online at pmfby.gov.in under 'Farmer Corner' by registering with Aadhaar-verified mobile number, entering land and crop details, uploading documents, and paying the premium. Alternatively, apply offline at the nearest bank branch, Common Service Centre (CSC), or agriculture office. Loanee farmers are enrolled automatically by their bank.",
+    "official_link": "https://pmfby.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-jan-dhan-yojana",
+    "name": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+    "category": "Finance",
+    "ministry": "Ministry of Finance (Department of Financial Services)",
+    "description": "The world's largest financial inclusion programme, allowing individuals without a bank account to open a zero-balance basic savings bank account at any bank branch or Business Correspondent (Bank Mitra), connecting the unbanked population to formal banking and government benefit transfers.",
+    "benefits": "Zero-balance savings account with no minimum balance requirement, free RuPay debit card, accidental insurance cover, overdraft facility up to Rs. 10,000 (subject to eligibility, one per household), and Direct Benefit Transfer (DBT) for government subsidies. Also serves as the gateway to insurance schemes like PMJJBY and PMSBY.",
+    "eligibility": [
+      "Any Indian citizen aged 10 years or above can open an account",
+      "No restriction based on income, occupation, or place of residence; both rural and urban residents eligible",
+      "Minors above 10 years can open accounts with guardian consent",
+      "Individuals without officially valid documents can open a Small Account after due diligence per RBI guidelines"
+    ],
+    "eligibility_rules": {
+      "min_age": 10,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card (preferred; no additional documents needed if provided)",
+      "Any one identity proof (voter ID, driving license, PAN, passport, etc.) if Aadhaar unavailable",
+      "Address proof (if different from Aadhaar address, or if Aadhaar not used)",
+      "Passport-size photograph"
+    ],
+    "how_to_apply": "Visit any bank branch or Bank Mitra/Business Correspondent (CSP) center with the required KYC documents, fill out the account opening form, and submit. Accounts can also be opened by converting an existing eligible savings account to a PMJDY account.",
+    "official_link": "https://pmjdy.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-jeevan-jyoti-bima-yojana",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "category": "Finance/Insurance",
+    "ministry": "Ministry of Finance (Jan Suraksha Schemes)",
+    "description": "A government-backed, one-year renewable term life insurance scheme offering affordable life cover to bank account holders, providing financial protection to nominees in case of the insured's death due to any cause.",
+    "benefits": "Life insurance cover of Rs. 2 lakh paid to the nominee if the insured person dies during the active policy period, for any reason (natural, illness, or accident), at a nominal annual premium of Rs. 436, auto-debited from the subscriber's bank account. Renewable every year; policy can be withdrawn anytime.",
+    "eligibility": [
+      "Applicant must be an Indian citizen aged 18 to 50 years",
+      "Must hold a savings bank or post office account with auto-debit consent",
+      "No medical examination or documentation required to join",
+      "Coverage available up to age 55, subject to annual renewal and premium payment"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 50,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Bank/post office savings account details",
+      "Nominee details",
+      "Auto-debit consent form"
+    ],
+    "how_to_apply": "Apply through your bank's net banking or mobile banking app, or visit the bank branch/post office, select PMJJBY, provide account and nominee details, and give consent for annual auto-debit of the premium.",
+    "official_link": "https://jansuraksha.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "category": "Agriculture",
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "description": "A central sector scheme providing income support to all landholding farmer families across the country to supplement their financial needs for agriculture and allied activities as well as domestic needs.",
+    "benefits": "Rs. 6,000 per year paid in three equal installments of Rs. 2,000 every four months, transferred directly to the bank accounts of eligible farmers via Direct Benefit Transfer (DBT).",
+    "eligibility": [
+      "All landholding farmer families with cultivable land, subject to exclusions",
+      "Institutional landholders are not eligible",
+      "Farmer families holding constitutional posts, serving/retired government officers and employees above certain pay grades are excluded",
+      "Income tax payers in the last assessment year are excluded"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "farmer",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Land ownership/records documents",
+      "Bank account passbook (for DBT)",
+      "Citizenship certificate"
+    ],
+    "how_to_apply": "Register online at pmkisan.gov.in via the 'Farmers Corner' > 'New Farmer Registration' using Aadhaar number, or apply through the local Common Service Centre (CSC) / Patwari / Revenue Officer / Nodal Officer nominated by the state government.",
+    "official_link": "https://pmkisan.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-kusum",
+    "name": "PM-KUSUM (Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan)",
+    "category": "Agriculture",
+    "ministry": "Ministry of New and Renewable Energy",
+    "description": "A renewable energy scheme helping farmers install solar-powered irrigation pumps and set up small solar power plants on their land, reducing dependency on diesel and grid electricity while creating an additional income stream by selling surplus power to DISCOMs.",
+    "benefits": "Subsidy of up to 60% (30% central + 30% state) on solar pump installation, with an additional 30% available as a bank loan so the farmer pays only around 10% from their own pocket. Farmers with grid-connected solar plants can sell surplus electricity to DISCOMs at a feed-in-tariff for additional income.",
+    "eligibility": [
+      "Individual farmers who own agricultural land",
+      "Groups of farmers, cooperatives, panchayats, Farmer Producer Organisations (FPOs), and Water User Associations (WUAs) can also apply",
+      "Farmers without their own equity can partner with developers or local DISCOMs",
+      "Applicant must have valid land ownership documents or a lease/land-use agreement"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "farmer",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Land ownership documents or valid lease/land-use certificate",
+      "Bank account details (for DBT subsidy)",
+      "Recent passport-size photograph",
+      "Electricity connection details (for grid-connected components)"
+    ],
+    "how_to_apply": "Apply online at the official PM-KUSUM portal (pmkusum.mnre.gov.in) via 'Farmer Registration', filling in land and equipment details and uploading required documents. Some states also allow offline applications through DISCOMs or local agriculture departments.",
+    "official_link": "https://pmkusum.mnre.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-matru-vandana-yojana",
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "category": "Women & Child",
+    "ministry": "Ministry of Women and Child Development",
+    "description": "A maternity benefit scheme providing cash incentives to pregnant and lactating women to compensate for wage loss around childbirth and to promote proper nutrition, antenatal care, institutional delivery, and early childhood immunisation.",
+    "benefits": "Rs. 5,000 for the first living child, paid in 2 installments tied to registration and health milestones (ANC visits, delivery proof). Under PMMVY 2.0, an additional Rs. 6,000 is paid if the second child is a girl, bringing the total to up to Rs. 11,000. All amounts are transferred via DBT to the mother's Aadhaar-linked bank account.",
+    "eligibility": [
+      "Pregnant and lactating women, for their first living child (any gender) or second child if a girl",
+      "Applicant must be 19 years of age or older",
+      "Excludes women in regular Central/State Government or PSU employment, or already receiving similar paid maternity benefits",
+      "Registration (Form 1A) must be filed within 150 days of the Last Menstrual Period (LMP); late registration forfeits eligibility"
+    ],
+    "eligibility_rules": {
+      "min_age": 19,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card of the mother",
+      "Mother and Child Protection (MCP) card",
+      "Bank account passbook (Aadhaar-linked)",
+      "Proof of pregnancy/delivery as applicable (Form 1B after delivery, Form 1C after first immunisation)"
+    ],
+    "how_to_apply": "Register at the nearest Anganwadi Centre or approved health facility, or online via the PMMVY portal (pmmvy.wcd.gov.in), using the MCP card, Aadhaar, and bank details. The Anganwadi worker enters details into the PMMVY Common Application Software (CAS); status can be tracked on the CAS portal.",
+    "official_link": "https://pmmvy.wcd.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-mudra-yojana",
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "category": "Employment/MSME",
+    "ministry": "Ministry of Finance (run through MUDRA/Department of Financial Services)",
+    "description": "A flagship scheme offering collateral-free loans to non-corporate, non-farm micro and small enterprises, helping small business owners and entrepreneurs access formal credit to start or grow their business without pledging assets as security.",
+    "benefits": "Collateral-free loans across four categories: Shishu (up to Rs. 50,000), Kishore (Rs. 50,001-5 lakh), Tarun (Rs. 5-10 lakh), and Tarun Plus (Rs. 10-20 lakh, for repeat borrowers with a clean repayment record on an earlier Tarun loan). A MUDRA Card (RuPay debit card) is issued for flexible withdrawal of working capital.",
+    "eligibility": [
+      "Indian citizen aged 18 to 65 years, running or planning to start a non-farm, income-generating micro or small enterprise",
+      "Total credit requirement must be up to Rs. 20 lakh",
+      "Applicant must not be a loan defaulter with any bank or financial institution and should have a satisfactory credit history",
+      "Relevant skills, experience, or knowledge related to the proposed business activity may be required"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 65,
+      "max_income": null,
+      "occupation": "small business owner/entrepreneur",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card and identity proof",
+      "Address proof (utility bill, Aadhaar, passport, or voter ID)",
+      "Business proof/plan (existing business proof or proposed activity details)",
+      "Passport-size photographs",
+      "Bank account details"
+    ],
+    "how_to_apply": "Apply online via the Udyamimitra portal (udyamimitra.in) or the JanSamarth portal, or visit any public/private sector bank/NBFC offering Mudra loans. Select the appropriate category (Shishu/Kishore/Tarun/Tarun Plus), fill the PMMY application form, submit documents, and await approval and disbursement.",
+    "official_link": "https://www.mudra.org.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-suraksha-bima-yojana",
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "category": "Finance/Insurance",
+    "ministry": "Ministry of Finance (Jan Suraksha Schemes)",
+    "description": "A government-backed, one-year renewable accidental death and disability insurance scheme offering coverage to bank account holders at an extremely low premium, providing financial protection in the event of accidental death or disability.",
+    "benefits": "Accidental death cover of Rs. 2 lakh paid to the nominee, Rs. 2 lakh for total and irrecoverable disability (loss of both eyes, both hands, or both feet), and Rs. 1 lakh for partial disability (loss of one eye, one hand, or one foot), at an annual premium of just Rs. 20, auto-debited from the linked bank account. Coverage period runs 1st June to 31st May, renewable annually.",
+    "eligibility": [
+      "Applicant must be an Indian citizen aged 18 to 70 years",
+      "Must hold a savings bank or post office account with auto-debit consent",
+      "No medical examination required to join",
+      "Premium auto-debited on or before 31st May each year for continuous coverage"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": 70,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Bank/post office savings account details",
+      "Nominee details",
+      "Auto-debit consent form"
+    ],
+    "how_to_apply": "Apply through your bank's net banking or mobile banking app, or visit the bank branch/post office, select PMSBY, provide account and nominee details, and give consent for annual auto-debit of the premium.",
+    "official_link": "https://jansuraksha.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-ujjwala-yojana",
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY 2.0)",
+    "category": "Housing/Household",
+    "ministry": "Ministry of Petroleum and Natural Gas",
+    "description": "A scheme providing free LPG gas connections to adult women from economically weaker households, replacing polluting cooking fuels like firewood and coal to protect the health of women and children and reduce indoor air pollution.",
+    "benefits": "Free LPG connection in the woman's name with a deposit-free cylinder (5 kg or 14.2 kg) and a free stove; first refill provided free. Beneficiaries also receive a targeted DBT subsidy of Rs. 300 per 14.2 kg cylinder refill for up to 12 refills annually.",
+    "eligibility": [
+      "Applicant must be an adult woman (18 years or above) from a poor/BPL household without an existing LPG connection",
+      "Antyodaya Anna Yojana (AAY) ration card holders and SECC-listed households automatically qualify",
+      "Households without formal documentation can establish BPL status via a 14-point self-declaration form",
+      "Special provision for migrant workers, who may apply with a self-declaration of family composition and address in lieu of formal address proof"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card (mandatory for e-KYC)",
+      "Ration card (or 14-point self-declaration if unavailable)",
+      "Bank account details (for DBT subsidy)",
+      "Passport-size photograph",
+      "Address proof (or self-declaration for migrant workers)"
+    ],
+    "how_to_apply": "Apply online at pmuy.gov.in or visit the nearest LPG distributor (Indane, Bharat Gas, or HP Gas) with Aadhaar and ration card for biometric verification. The UMANG app also supports face-authentication based application.",
+    "official_link": "https://pmuy.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pm-vishwakarma-yojana",
+    "name": "PM Vishwakarma Yojana",
+    "category": "Employment/MSME",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+    "description": "A central scheme supporting India's traditional artisans and craftspeople across 18 family-based trades (carpenters, blacksmiths, potters, goldsmiths, cobblers, tailors, and others), providing formal recognition, skill training, toolkit support, and access to collateral-free credit.",
+    "benefits": "PM Vishwakarma recognition certificate and ID card; free basic skill training (5-7 days, 40 hours) with a stipend of Rs. 500/day; toolkit incentive of Rs. 15,000 via e-RUPI voucher; collateral-free loans up to Rs. 3 lakh at just 5% interest, disbursed in stages (Rs. 1 lakh first tranche, up to Rs. 2 lakh second tranche).",
+    "eligibility": [
+      "Applicant must be an artisan or craftsperson working with hands and tools in one of the 18 recognised trades",
+      "Minimum age 18 years; no minimum years of practice required, self-declaration with photo evidence suffices",
+      "Only one member per family can enroll",
+      "Family must not have availed a similar credit-based subsidy (PMEGP, PM SVANidhi, MUDRA) in the last 5 years",
+      "Government employees and their families are not eligible"
+    ],
+    "eligibility_rules": {
+      "min_age": 18,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "artisan/craftsperson",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Address proof",
+      "Bank account details (Aadhaar-linked)",
+      "Trade self-declaration with photo evidence, verified by the local panchayat/ULB",
+      "Passport-size photograph"
+    ],
+    "how_to_apply": "Register online at pmvishwakarma.gov.in with mobile number and Aadhaar e-KYC, or visit the nearest Common Service Centre (CSC). Complete the mandatory basic training before claiming the toolkit grant or applying for the loan.",
+    "official_link": "https://pmvishwakarma.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pmay-gramin",
+    "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+    "category": "Housing",
+    "ministry": "Ministry of Rural Development",
+    "description": "A rural housing scheme providing financial assistance to houseless households and those living in kutcha/dilapidated houses to construct a pucca house, with beneficiaries selected from verified SECC 2011 and Awaas+ survey data.",
+    "benefits": "Financial assistance paid in installments tied to construction progress (verified via geo-tagged photos), plus convergence support of around 90-95 days of MGNREGA wages for construction labour and assistance for toilet construction under Swachh Bharat Mission.",
+    "eligibility": [
+      "Household is houseless or lives in a house with kutcha walls and kutcha roof (0, 1, or 2 rooms)",
+      "Household must appear in the SECC 2011 / Awaas+ survey data, verified by the gram sabha",
+      "Priority to SC/ST households, minorities, widows, persons with disabilities, freed bonded labourers, and families of martyred defence/paramilitary personnel",
+      "Owning a motorised two-wheeler is an automatic exclusion under PMAY-G rules"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Bank account details (linked to Aadhaar)",
+      "MGNREGA job card (if available)",
+      "Swachh Bharat Mission number (if available)",
+      "Household entry proof in SECC 2011 / Awaas+ list"
+    ],
+    "how_to_apply": "Verify inclusion in the Awaas+/SECC list at your gram panchayat; the panchayat secretary or block office initiates registration on pmayg.nic.in. If missed, request inclusion during an ongoing Awaas+ survey window through the gram sabha.",
+    "official_link": "https://pmayg.nic.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "pmay-urban",
+    "name": "Pradhan Mantri Awas Yojana - Urban 2.0 (PMAY-U)",
+    "category": "Housing",
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "description": "A housing scheme providing financial assistance to eligible urban households belonging to the EWS, LIG, and MIG income categories to construct, buy, or improve a pucca house, under the 'Housing for All' mission.",
+    "benefits": "Beneficiary-Led Construction (BLC): financial assistance up to Rs. 2.5 lakh to build a new pucca house on own land. Affordable Housing in Partnership (AHP): allotment of ready-built affordable houses. Interest Subsidy Scheme (ISS): subsidy on home loans for purchase/construction, for EWS, LIG and MIG categories.",
+    "eligibility": [
+      "Applicant must not own a pucca house anywhere in India",
+      "Economically Weaker Section (EWS): annual household income up to Rs. 3 lakh",
+      "Low Income Group (LIG): annual household income Rs. 3-6 lakh",
+      "Middle Income Group (MIG): annual household income Rs. 6-9 lakh",
+      "Priority to widows, single women, senior citizens, transgender persons, persons with disabilities, and SC/ST/minority households",
+      "Beneficiary must not have availed benefits under any other housing scheme"
+    ],
+    "eligibility_rules": {
+      "min_age": null,
+      "max_age": null,
+      "max_income": 900000,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Aadhaar card",
+      "Income proof/certificate",
+      "Bank account details",
+      "Proof of not owning a pucca house (self-declaration)",
+      "Land ownership documents (for Beneficiary-Led Construction)"
+    ],
+    "how_to_apply": "Apply online through the official PMAY-Urban portal (pmay-urban.gov.in) or through your Urban Local Body (ULB) during an active application/survey window. Income category and eligibility are verified before assistance is sanctioned.",
+    "official_link": "https://pmay-urban.gov.in",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "sukanya-samriddhi-yojana",
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "category": "Women & Child",
+    "ministry": "Ministry of Finance (Department of Economic Affairs)",
+    "description": "A government-backed small savings scheme launched under the 'Beti Bachao, Beti Padhao' initiative, helping parents and legal guardians build a financial corpus for a girl child's higher education and marriage through long-term, tax-free savings.",
+    "benefits": "Attractive interest rate (8.2% p.a. for Q2 FY 2026-27, compounded annually and revised quarterly), triple tax exemption under Section 80C (deposits, interest earned, and maturity amount are all tax-free). Deposits allowed from Rs. 250 to Rs. 1.5 lakh per financial year for 15 years, with the account maturing 21 years after opening.",
+    "eligibility": [
+      "Account can be opened by a parent or legal guardian in the name of a girl child below 10 years of age",
+      "Maximum of two SSY accounts per family, one per girl child (exceptions for twins/triplets)",
+      "Available only to Indian citizen girl children",
+      "Account can be opened at any time from the birth of the girl child until she turns 10"
+    ],
+    "eligibility_rules": {
+      "min_age": 0,
+      "max_age": 10,
+      "max_income": null,
+      "occupation": "any",
+      "state": "All India"
+    },
+    "documents_required": [
+      "Girl child's birth certificate",
+      "Identity proof of parent/guardian (Aadhaar, passport, or voter ID)",
+      "Address proof of parent/guardian",
+      "SSY account opening application form (Form-1)",
+      "Passport-size photographs of the girl child and parent/guardian"
+    ],
+    "how_to_apply": "Visit any authorised bank branch or post office with the required documents, fill the SSY application form (Form-1), and make the first deposit (minimum Rs. 250) via cash, cheque, or demand draft.",
+    "official_link": "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=89",
+    "state": "All India"
+  },
+  {
+    "scheme_id": "vahli-dikri-yojana",
+    "name": "Vahli Dikri Yojana (Gujarat)",
+    "category": "Women & Child",
+    "ministry": "Gujarat Women and Child Development Department",
+    "description": "A Gujarat state flagship scheme (meaning 'Dear Daughter Scheme') providing staged financial assistance to families for their girl child, aimed at reducing school dropouts, promoting girls' education, and improving the child sex ratio in the state.",
+    "benefits": "Total financial assistance of Rs. 1,10,000 to Rs. 1,16,000 disbursed in stages: an amount at Class 1 admission (approx. Rs. 4,000), a further amount at Class 9 admission (approx. Rs. 6,000-10,000), and a final lump sum of around Rs. 1 lakh payable when the girl turns 18, withdrawable for higher education or marriage expenses.",
+    "eligibility": [
+      "Applicant (parent) must be a permanent resident of Gujarat",
+      "Girl child must be born on or after 02-08-2019",
+      "Applicable only for the first two girl children of a family",
+      "Annual family income must not exceed Rs. 2 lakh",
+      "Family must have an active bank account for direct transfer of benefits"
+    ],
+    "eligibility_rules": {
+      "min_age": 0,
+      "max_age": 18,
+      "max_income": 200000,
+      "occupation": "any",
+      "state": "Gujarat"
+    },
+    "documents_required": [
+      "Girl child's birth certificate",
+      "Aadhaar card of girl child and parent",
+      "Residence proof of Gujarat",
+      "Family annual income certificate",
+      "Bank account details",
+      "Recent passport-size photograph"
+    ],
+    "how_to_apply": "Collect the application form from the local Anganwadi Kendra or the District Office of the Women and Child Development Department, fill it with the required documents attached, and submit it at the same office for verification. Selected beneficiaries are notified and financial assistance is credited directly to the bank account in stages.",
+    "official_link": "https://wcd.gujarat.gov.in",
+    "state": "Gujarat"
+  }
+]
