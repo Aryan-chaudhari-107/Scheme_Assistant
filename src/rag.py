@@ -79,8 +79,12 @@ def _extract_retry_delay(error: errors.ClientError, default: float) -> float:
     return default
 
 
-def ask_gemini(context: str, question: str) -> str:
+def ask_gemini(context: str, question: str, system_prompt: str = None) -> str:
     """Send one grounded question to Gemini and return the answer text.
+
+    system_prompt defaults to the English-only SYSTEM_PROMPT; pass a
+    different one (e.g. from build_multilingual_system_prompt) to get
+    an answer generated directly in another language.
 
     - 503 (ServerError, temporary overload): short retry with fixed backoff.
     - 429 (ClientError, quota/rate limit exceeded): retry using the server's
@@ -89,6 +93,9 @@ def ask_gemini(context: str, question: str) -> str:
     - Any other error: fails fast with a clear message, no silent fallback
       to a different, un-audited model.
     """
+    if system_prompt is None:
+        system_prompt = SYSTEM_PROMPT
+
     last_error = None
 
     for attempt in range(1, MAX_RETRIES + 1):
@@ -97,7 +104,7 @@ def ask_gemini(context: str, question: str) -> str:
                 model=GEMINI_MODEL,
                 contents=build_prompt(context, question),
                 config=types.GenerateContentConfig(
-                    system_instruction=SYSTEM_PROMPT,
+                    system_instruction=system_prompt,
                     max_output_tokens=1024,
                 ),
             )
@@ -200,6 +207,104 @@ def answer_question(question: str, top_k: int = DEFAULT_TOP_K) -> dict:
         }
 
     return {"answer": answer_text, "sources": sources}
+
+
+# --- Phase 3.4: multilingual entry point (translate-in -> RAG -> answer directly in target language) ---
+
+LANGUAGE_DISPLAY_NAMES = {
+    "hindi": "Hindi",
+    "hinglish": "Hindi",       # transliterated Hindi -> answer in proper Hindi (Devanagari)
+    "gujarati": "Gujarati",
+    "gujlish": "Gujarati",     # transliterated Gujarati -> answer in proper Gujarati script
+    "english": "English",
+    "unknown": "English",
+}
+
+
+def build_multilingual_system_prompt(target_language_name: str) -> str:
+    """Extend the base SYSTEM_PROMPT with a target-language instruction,
+    while keeping every grounding/refusal rule identical to the English version.
+    """
+    if target_language_name == "English":
+        return SYSTEM_PROMPT
+
+    return SYSTEM_PROMPT + f"""
+
+ADDITIONAL LANGUAGE INSTRUCTION:
+Respond entirely in natural, fluent {target_language_name}, using the correct native script
+(Devanagari for Hindi, Gujarati script for Gujarati) - even if the user's original question
+was typed in English letters (transliterated).
+However, you MUST still preserve exactly, unchanged, in their original form:
+- All official scheme names (e.g. "PM-KISAN", "Pradhan Mantri Awas Yojana")
+- All numbers, amounts, percentages, and dates (e.g. "Rs. 6,000", "60%", "18-40 years")
+- All URLs/official_links, character-for-character
+Only translate the surrounding explanation, not these specific elements.
+"""
+
+
+def answer_question_multilingual(user_text: str, top_k: int = DEFAULT_TOP_K) -> dict:
+    """Phase 3.4 entry point: detect language -> translate question to English
+    -> retrieve -> generate the answer DIRECTLY in the user's language (single
+    LLM call, per the Phase 3.1 decision - no separate translate-out step).
+
+    Returns a dict: {"answer": str, "sources": [...], "detected_language": str,
+    "english_question": str}
+    """
+    from translate import detect_and_translate_to_english, translate_response  # local import avoids a circular import at module load time
+
+    detection = detect_and_translate_to_english(user_text)
+    english_question = detection["english_translation"]
+    detected_language = detection["detected_language"]
+    target_language_name = LANGUAGE_DISPLAY_NAMES.get(detected_language, "English")
+
+    try:
+        context_text, sources = retrieve_context(english_question, top_k=top_k)
+    except Exception as e:
+        return {
+            "answer": (
+                "Sorry, I couldn't search the scheme database right now "
+                f"({type(e).__name__}). Please try again in a moment."
+            ),
+            "sources": [],
+            "detected_language": detected_language,
+            "english_question": english_question,
+        }
+
+    if not context_text.strip():
+        fallback = (
+            "I don't have verified information on this in my current database. "
+            "Please check myscheme.gov.in for the most up-to-date details."
+        )
+        if target_language_name != "English":
+            fallback = translate_response(fallback, target_language_name.lower())
+        return {
+            "answer": fallback,
+            "sources": [],
+            "detected_language": detected_language,
+            "english_question": english_question,
+        }
+
+    system_prompt = build_multilingual_system_prompt(target_language_name)
+
+    try:
+        answer_text = ask_gemini(context_text, english_question, system_prompt=system_prompt)
+    except Exception as e:
+        return {
+            "answer": (
+                "Sorry, I'm having trouble reaching the AI service right now "
+                f"({type(e).__name__}). Please try again shortly."
+            ),
+            "sources": sources,
+            "detected_language": detected_language,
+            "english_question": english_question,
+        }
+
+    return {
+        "answer": answer_text,
+        "sources": sources,
+        "detected_language": detected_language,
+        "english_question": english_question,
+    }
 
 
 # --- Phase 2.4 test harness: 10 real questions through full retrieval+LLM --
