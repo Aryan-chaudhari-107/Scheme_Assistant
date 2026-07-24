@@ -54,6 +54,7 @@ RULE_UPDATES = {
     "pm-matru-vandana-yojana": {"gender": "female", "requires_pregnant_or_recent_mother": True},
     "pm-ujjwala-yojana": {"gender": "female"},
     "pmay-gramin": {
+        "owns_pucca_house_excluded": True,  # fixed during Phase 4.5 edge-case testing: real PMAY-G eligibility requires houseless/kutcha-house status, same logic as PMAY-Urban
         "complex_manual_check": True,
         "complex_reason": "Requires appearance in SECC 2011 / Awaas+ survey data verified by the gram sabha - not determinable from self-reported fields alone.",
     },
