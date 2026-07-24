@@ -67,7 +67,64 @@ def detect_and_translate_to_english(user_text: str) -> dict:
         return {"detected_language": "unknown", "english_translation": user_text}
 
 
-# --- Test cases covering all 4 required input types ------------------------
+TRANSLATE_RESPONSE_SYSTEM_PROMPT = """You are a precise translator for an Indian government schemes assistant.
+
+Translate the given English answer into the target language, following these STRICT rules:
+1. Preserve ALL numbers, amounts, percentages, and dates EXACTLY as written (e.g. "Rs. 6,000", "60%", "18-40 years") - never round, reword, or drop them.
+2. Preserve official scheme names EXACTLY as given, in their original form (e.g. "PM-KISAN", "Pradhan Mantri Awas Yojana"). You may add the translated meaning in parentheses if natural, but never replace or alter the original name.
+3. Preserve every URL/official_link character-for-character, unchanged, never translated or reformatted.
+4. Translate everything else (explanations, eligibility descriptions, instructions) into natural, fluent target-language text.
+5. Do not add or remove any factual content - only translate.
+
+Respond with ONLY the translated text, no preamble, no explanation.
+"""
+
+
+def translate_response(english_text: str, target_language: str) -> str:
+    """Translate an English answer into target_language ('hindi' or 'gujarati'),
+    strictly preserving numbers, scheme names, and URLs unchanged.
+
+    If target_language is 'english' (or unrecognized), returns the text unchanged.
+    Falls back to the original English text if the API call fails.
+    """
+    if target_language.lower() not in ("hindi", "gujarati"):
+        return english_text
+
+    try:
+        response = client.models.generate_content(
+            model=TRANSLATE_MODEL,
+            contents=f"Target language: {target_language}\n\nEnglish text to translate:\n{english_text}",
+            config=types.GenerateContentConfig(
+                system_instruction=TRANSLATE_RESPONSE_SYSTEM_PROMPT,
+                max_output_tokens=1024,
+            ),
+        )
+        return response.text.strip()
+    except Exception as e:
+        print(f"  [translate warning] response translation failed ({type(e).__name__}), returning English text as fallback")
+        return english_text
+
+
+# --- Phase 3.3 test case: English answer with income threshold + scheme name + link ---
+
+SAMPLE_ENGLISH_ANSWER = """Under the PM Awas Yojana - Urban (PMAY-U) scheme, the Economically Weaker Section (EWS) category covers households with an annual income up to Rs. 3,00,000. Beneficiaries can receive financial assistance of up to Rs. 2,50,000 for constructing a new house on their own land under the Beneficiary-Led Construction component.
+
+For more details and to apply, visit the official website: https://pmay-urban.gov.in"""
+
+
+def run_translate_response_tests():
+    print("Testing translate_response() on all 3 target languages...\n")
+    print("Original English answer:")
+    print(SAMPLE_ENGLISH_ANSWER)
+    print()
+
+    for lang in ["english", "hindi", "gujarati"]:
+        print("=" * 70)
+        print(f"Target language: {lang}")
+        print("-" * 70)
+        translated = translate_response(SAMPLE_ENGLISH_ANSWER, lang)
+        print(translated)
+        print()
 
 TEST_CASES = [
     ("English", "What is the benefit under PM-KISAN?"),
@@ -87,6 +144,9 @@ def main():
         print(f"Detected language: {result['detected_language']}")
         print(f"English translation: {result['english_translation']}")
         print()
+
+    print()
+    run_translate_response_tests()
 
 
 if __name__ == "__main__":
