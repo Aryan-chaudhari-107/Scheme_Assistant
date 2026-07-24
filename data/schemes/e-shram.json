@@ -12,6 +12,15 @@
     "Gig and platform workers (delivery, ride-hailing, etc.) are eligible if not covered by EPFO/ESIC"
   ],
   "eligibility_rules": {
+    "gender": "any",
+    "social_category": "any",
+    "marital_status": "any",
+    "owns_pucca_house_excluded": false,
+    "income_tax_payer_excluded": true,
+    "requires_girl_child_under_10": false,
+    "requires_pregnant_or_recent_mother": false,
+    "complex_manual_check": false,
+    "complex_reason": null,
     "min_age": 16,
     "max_age": 59,
     "max_income": null,

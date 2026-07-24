@@ -12,6 +12,15 @@
     "Not eligible if already receiving a similar pension from a state or Central Government scheme"
   ],
   "eligibility_rules": {
+    "gender": "any",
+    "social_category": "any",
+    "marital_status": "any",
+    "owns_pucca_house_excluded": false,
+    "income_tax_payer_excluded": false,
+    "requires_girl_child_under_10": false,
+    "requires_pregnant_or_recent_mother": false,
+    "complex_manual_check": true,
+    "complex_reason": "Requires BPL/SECC-2011 household verification, not a simple income cutoff a self-reported form can determine.",
     "min_age": 60,
     "max_age": null,
     "max_income": null,

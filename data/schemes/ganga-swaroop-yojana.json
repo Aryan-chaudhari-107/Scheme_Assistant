@@ -12,6 +12,15 @@
     "Benefit is discontinued if the woman remarries"
   ],
   "eligibility_rules": {
+    "gender": "female",
+    "social_category": "any",
+    "marital_status": "widowed",
+    "owns_pucca_house_excluded": false,
+    "income_tax_payer_excluded": false,
+    "requires_girl_child_under_10": false,
+    "requires_pregnant_or_recent_mother": false,
+    "complex_manual_check": false,
+    "complex_reason": null,
     "min_age": 18,
     "max_age": 40,
     "max_income": 150000,

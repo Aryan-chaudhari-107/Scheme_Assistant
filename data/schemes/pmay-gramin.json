@@ -12,6 +12,15 @@
     "Owning a motorised two-wheeler is an automatic exclusion under PMAY-G rules"
   ],
   "eligibility_rules": {
+    "gender": "any",
+    "social_category": "any",
+    "marital_status": "any",
+    "owns_pucca_house_excluded": false,
+    "income_tax_payer_excluded": false,
+    "requires_girl_child_under_10": false,
+    "requires_pregnant_or_recent_mother": false,
+    "complex_manual_check": true,
+    "complex_reason": "Requires appearance in SECC 2011 / Awaas+ survey data verified by the gram sabha - not determinable from self-reported fields alone.",
     "min_age": null,
     "max_age": null,
     "max_income": null,

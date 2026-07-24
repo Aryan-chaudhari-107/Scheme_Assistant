@@ -13,6 +13,20 @@
     "Scholarship must be renewed each academic year; not automatically continued"
   ],
   "eligibility_rules": {
+    "gender": "any",
+    "social_category": [
+      "SC",
+      "ST",
+      "OBC",
+      "EBC"
+    ],
+    "marital_status": "any",
+    "owns_pucca_house_excluded": false,
+    "income_tax_payer_excluded": false,
+    "requires_girl_child_under_10": false,
+    "requires_pregnant_or_recent_mother": false,
+    "complex_manual_check": false,
+    "complex_reason": null,
     "min_age": null,
     "max_age": null,
     "max_income": 250000,

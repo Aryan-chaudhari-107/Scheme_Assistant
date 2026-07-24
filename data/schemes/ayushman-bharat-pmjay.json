@@ -12,9 +12,18 @@
     "Senior citizens already covered under CGHS/ECHS must choose one scheme; cannot avail both simultaneously"
   ],
   "eligibility_rules": {
+    "gender": "any",
+    "social_category": "any",
+    "marital_status": "any",
+    "owns_pucca_house_excluded": false,
+    "income_tax_payer_excluded": false,
+    "requires_girl_child_under_10": false,
+    "requires_pregnant_or_recent_mother": false,
+    "complex_manual_check": true,
+    "complex_reason": "True eligibility is based on SECC 2011 deprivation category, not simply annual income. Income is used here only as a rough proxy.",
     "min_age": null,
     "max_age": null,
-    "max_income": 10000,
+    "max_income": 120000,
     "occupation": "any",
     "state": "All India"
   },

@@ -14,6 +14,15 @@
       "NRI and OCI cardholders are not eligible"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": true,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": 40,
       "max_income": null,
@@ -44,9 +53,18 @@
       "Senior citizens already covered under CGHS/ECHS must choose one scheme; cannot avail both simultaneously"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": true,
+      "complex_reason": "True eligibility is based on SECC 2011 deprivation category, not simply annual income. Income is used here only as a rough proxy.",
       "min_age": null,
       "max_age": null,
-      "max_income": 10000,
+      "max_income": 120000,
       "occupation": "any",
       "state": "All India"
     },
@@ -75,6 +93,15 @@
       "Gig and platform workers (delivery, ride-hailing, etc.) are eligible if not covered by EPFO/ESIC"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": true,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 16,
       "max_age": 59,
       "max_income": null,
@@ -105,6 +132,15 @@
       "Benefit is discontinued if the woman remarries"
     ],
     "eligibility_rules": {
+      "gender": "female",
+      "social_category": "any",
+      "marital_status": "widowed",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": 40,
       "max_income": 150000,
@@ -138,6 +174,22 @@
       "Valid digital caste certificate required"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": [
+        "SC",
+        "ST",
+        "OBC/SEBC",
+        "EBC",
+        "NT-DNT",
+        "Minority"
+      ],
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": null,
       "max_age": null,
       "max_income": 250000,
@@ -170,6 +222,18 @@
       "Willingness to pursue one of the 28 listed trades"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": [
+        "SC",
+        "NT-DNT"
+      ],
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": 60,
       "max_income": 600000,
@@ -203,6 +267,15 @@
       "Beneficiaries are jointly selected by banks, private developers, and the implementing housing agency"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": true,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": null,
       "max_age": null,
       "max_income": 1000000,
@@ -234,6 +307,15 @@
       "Not eligible if already receiving a similar pension from a state or Central Government scheme"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": true,
+      "complex_reason": "Requires BPL/SECC-2011 household verification, not a simple income cutoff a self-reported form can determine.",
       "min_age": 60,
       "max_age": null,
       "max_income": null,
@@ -266,6 +348,20 @@
       "Scholarship must be renewed each academic year; not automatically continued"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": [
+        "SC",
+        "ST",
+        "OBC",
+        "EBC"
+      ],
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": null,
       "max_age": null,
       "max_income": 250000,
@@ -298,6 +394,19 @@
       "Aadhaar and Aadhaar-linked mobile number required for One Time Registration (OTR) on NSP"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": [
+        "SC",
+        "ST",
+        "OBC"
+      ],
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": null,
       "max_age": null,
       "max_income": 250000,
@@ -329,6 +438,15 @@
       "Applicant must have a KYC-compliant Aadhaar card"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": 70,
       "max_income": null,
@@ -360,6 +478,15 @@
       "Individuals without officially valid documents can open a Small Account after due diligence per RBI guidelines"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 10,
       "max_age": null,
       "max_income": null,
@@ -390,6 +517,15 @@
       "Coverage available up to age 55, subject to annual renewal and premium payment"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": 50,
       "max_income": null,
@@ -420,6 +556,15 @@
       "Income tax payers in the last assessment year are excluded"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": true,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": null,
       "max_age": null,
       "max_income": null,
@@ -450,6 +595,15 @@
       "Applicant must have valid land ownership documents or a lease/land-use agreement"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": null,
       "max_age": null,
       "max_income": null,
@@ -481,6 +635,15 @@
       "Registration (Form 1A) must be filed within 150 days of the Last Menstrual Period (LMP); late registration forfeits eligibility"
     ],
     "eligibility_rules": {
+      "gender": "female",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": true,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 19,
       "max_age": null,
       "max_income": null,
@@ -511,6 +674,15 @@
       "Relevant skills, experience, or knowledge related to the proposed business activity may be required"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": 65,
       "max_income": null,
@@ -542,6 +714,15 @@
       "Premium auto-debited on or before 31st May each year for continuous coverage"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": 70,
       "max_income": null,
@@ -572,6 +753,15 @@
       "Special provision for migrant workers, who may apply with a self-declaration of family composition and address in lieu of formal address proof"
     ],
     "eligibility_rules": {
+      "gender": "female",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": null,
       "max_income": null,
@@ -604,6 +794,15 @@
       "Government employees and their families are not eligible"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 18,
       "max_age": null,
       "max_income": null,
@@ -635,6 +834,15 @@
       "Owning a motorised two-wheeler is an automatic exclusion under PMAY-G rules"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": true,
+      "complex_reason": "Requires appearance in SECC 2011 / Awaas+ survey data verified by the gram sabha - not determinable from self-reported fields alone.",
       "min_age": null,
       "max_age": null,
       "max_income": null,
@@ -668,6 +876,15 @@
       "Beneficiary must not have availed benefits under any other housing scheme"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": true,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": false,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": null,
       "max_age": null,
       "max_income": 900000,
@@ -699,6 +916,15 @@
       "Account can be opened at any time from the birth of the girl child until she turns 10"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": true,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 0,
       "max_age": 10,
       "max_income": null,
@@ -731,6 +957,15 @@
       "Family must have an active bank account for direct transfer of benefits"
     ],
     "eligibility_rules": {
+      "gender": "any",
+      "social_category": "any",
+      "marital_status": "any",
+      "owns_pucca_house_excluded": false,
+      "income_tax_payer_excluded": false,
+      "requires_girl_child_under_10": true,
+      "requires_pregnant_or_recent_mother": false,
+      "complex_manual_check": false,
+      "complex_reason": null,
       "min_age": 0,
       "max_age": 18,
       "max_income": 200000,

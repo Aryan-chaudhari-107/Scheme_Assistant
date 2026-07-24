@@ -12,6 +12,15 @@
     "Registration (Form 1A) must be filed within 150 days of the Last Menstrual Period (LMP); late registration forfeits eligibility"
   ],
   "eligibility_rules": {
+    "gender": "female",
+    "social_category": "any",
+    "marital_status": "any",
+    "owns_pucca_house_excluded": false,
+    "income_tax_payer_excluded": false,
+    "requires_girl_child_under_10": false,
+    "requires_pregnant_or_recent_mother": true,
+    "complex_manual_check": false,
+    "complex_reason": null,
     "min_age": 19,
     "max_age": null,
     "max_income": null,
