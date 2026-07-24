@@ -40,7 +40,7 @@ client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CHROMA_DB_DIR = REPO_ROOT / "chroma_db"
 COLLECTION_NAME = "schemes"
-DEFAULT_TOP_K = 3
+DEFAULT_TOP_K = 5
 
 # Flash-Lite as primary: much higher free-tier daily quota than full Flash models.
 GEMINI_MODEL = "gemini-3.1-flash-lite"
