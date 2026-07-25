@@ -38,6 +38,8 @@ if "view" not in st.session_state:
     st.session_state.view = "Home"
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
+if "eligibility_results" not in st.session_state:
+    st.session_state.eligibility_results = None
 
 # --- Sidebar: language selector + navigation --------------------------------
 with st.sidebar:
@@ -164,44 +166,66 @@ elif st.session_state.view == "Eligibility Checker":
             "has_girl_child_under_10": has_girl_child_under_10,
             "is_pregnant_or_recent_mother": is_pregnant_or_recent_mother,
         }
+        language_lower = st.session_state.language.lower()
 
         with st.spinner("Checking your eligibility across all schemes..."):
             try:
-                results = check_eligibility(profile)
+                raw_results = check_eligibility(profile)
             except Exception as e:
                 st.error(f"Sorry, something went wrong while checking eligibility ({type(e).__name__}). Please try again.")
-                results = None
+                raw_results = None
 
-        if results:
-            eligible = {sid: r for sid, r in results.items() if r["status"] == "likely_eligible"}
-            review = {sid: r for sid, r in results.items() if r["status"] == "check_manually"}
-            not_eligible = {sid: r for sid, r in results.items() if r["status"] == "likely_not_eligible"}
+        if raw_results:
+            eligible_raw = {sid: r for sid, r in raw_results.items() if r["status"] == "likely_eligible"}
+            review_raw = {sid: r for sid, r in raw_results.items() if r["status"] == "check_manually"}
+            not_eligible_raw = {sid: r for sid, r in raw_results.items() if r["status"] == "likely_not_eligible"}
 
-            st.success(f"Checked all {len(results)} schemes.")
+            # Generate explanations ONCE here and cache the final text - not
+            # re-generated on every rerun (e.g. every time you navigate away
+            # and back), which would waste API calls unnecessarily.
+            with st.spinner("Preparing explanations..."):
+                eligible_final = [
+                    {"name": r["name"], "explanation": explain_eligibility(r, profile, language_lower)}
+                    for r in eligible_raw.values()
+                ]
+                review_final = [
+                    {"name": r["name"], "explanation": explain_eligibility(r, profile, language_lower)}
+                    for r in review_raw.values()
+                ]
+                not_eligible_final = [
+                    {"name": r["name"], "reason": "; ".join(r["reasons"]) if r["reasons"] else "did not meet eligibility criteria"}
+                    for r in not_eligible_raw.values()
+                ]
 
-            language_lower = st.session_state.language.lower()
+            st.session_state.eligibility_results = {
+                "total": len(raw_results),
+                "eligible": eligible_final,
+                "review": review_final,
+                "not_eligible": not_eligible_final,
+            }
 
-            st.subheader(f"✅ Likely Eligible ({len(eligible)})")
-            if eligible:
-                with st.spinner("Preparing explanations..."):
-                    for sid, r in eligible.items():
-                        explanation = explain_eligibility(r, profile, language_lower)
-                        st.markdown(f"**{r['name']}**")
-                        st.markdown(explanation)
-            else:
-                st.caption("No schemes matched in this category.")
+    # Render from session_state (not tied to the submit event) so results
+    # survive navigating away to another screen and back.
+    results = st.session_state.eligibility_results
+    if results:
+        st.success(f"Checked all {results['total']} schemes.")
 
-            st.subheader(f"❓ Check Manually ({len(review)})")
-            if review:
-                with st.spinner("Preparing explanations..."):
-                    for sid, r in review.items():
-                        explanation = explain_eligibility(r, profile, language_lower)
-                        st.markdown(f"**{r['name']}**")
-                        st.markdown(explanation)
-            else:
-                st.caption("No schemes in this category.")
+        st.subheader(f"✅ Likely Eligible ({len(results['eligible'])})")
+        if results["eligible"]:
+            for item in results["eligible"]:
+                st.markdown(f"**{item['name']}**")
+                st.markdown(item["explanation"])
+        else:
+            st.caption("No schemes matched in this category.")
 
-            with st.expander(f"❌ Likely Not Eligible ({len(not_eligible)})"):
-                for sid, r in not_eligible.items():
-                    reason_text = "; ".join(r["reasons"]) if r["reasons"] else "did not meet eligibility criteria"
-                    st.markdown(f"**{r['name']}** — {reason_text}")
+        st.subheader(f"❓ Check Manually ({len(results['review'])})")
+        if results["review"]:
+            for item in results["review"]:
+                st.markdown(f"**{item['name']}**")
+                st.markdown(item["explanation"])
+        else:
+            st.caption("No schemes in this category.")
+
+        with st.expander(f"❌ Likely Not Eligible ({len(results['not_eligible'])})"):
+            for item in results["not_eligible"]:
+                st.markdown(f"**{item['name']}** — {item['reason']}")
