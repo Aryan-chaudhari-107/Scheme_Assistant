@@ -96,10 +96,8 @@ elif st.session_state.view == "Chat":
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
             if message["role"] == "assistant" and message.get("sources"):
-                source_lines = " · ".join(
-                    f"[{s['name']}]({s['official_link']})" for s in message["sources"]
-                )
-                st.caption(f"📄 Sources: {source_lines}")
+                for s in message["sources"][:3]:  # cap at 3 to keep it clean
+                    st.caption(f"📄 Source: **{s['name']}** — [Official Link]({s['official_link']})")
 
     user_input = st.chat_input("Type your question here...")
     if user_input:
@@ -185,11 +183,11 @@ elif st.session_state.view == "Eligibility Checker":
             # and back), which would waste API calls unnecessarily.
             with st.spinner("Preparing explanations..."):
                 eligible_final = [
-                    {"name": r["name"], "explanation": explain_eligibility(r, profile, language_lower)}
+                    {"name": r["name"], "link": r["official_link"], "explanation": explain_eligibility(r, profile, language_lower)}
                     for r in eligible_raw.values()
                 ]
                 review_final = [
-                    {"name": r["name"], "explanation": explain_eligibility(r, profile, language_lower)}
+                    {"name": r["name"], "link": r["official_link"], "explanation": explain_eligibility(r, profile, language_lower)}
                     for r in review_raw.values()
                 ]
                 not_eligible_final = [
@@ -215,6 +213,7 @@ elif st.session_state.view == "Eligibility Checker":
             for item in results["eligible"]:
                 st.markdown(f"**{item['name']}**")
                 st.markdown(item["explanation"])
+                st.caption(f"📄 [Official Link]({item['link']})")
         else:
             st.caption("No schemes matched in this category.")
 
@@ -223,6 +222,7 @@ elif st.session_state.view == "Eligibility Checker":
             for item in results["review"]:
                 st.markdown(f"**{item['name']}**")
                 st.markdown(item["explanation"])
+                st.caption(f"📄 [Official Link]({item['link']})")
         else:
             st.caption("No schemes in this category.")
 

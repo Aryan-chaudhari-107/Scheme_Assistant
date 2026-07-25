@@ -130,6 +130,7 @@ def check_eligibility(user_profile: dict) -> dict:
         result = evaluate_scheme(user_profile, scheme)
         results[scheme["scheme_id"]] = {
             "name": scheme["name"],
+            "official_link": scheme.get("official_link", ""),
             "status": result["status"],
             "reasons": result["reasons"],
         }
