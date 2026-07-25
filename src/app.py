@@ -12,7 +12,18 @@ Run with:
     streamlit run src/app.py
 """
 
+import sys
+from pathlib import Path
+
 import streamlit as st
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))  # for eligibility_checker.py, eligibility_explainer.py (repo root)
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # for rag.py, translate.py (src/)
+
+from rag import answer_question_multilingual  # noqa: E402
+from eligibility_checker import check_eligibility  # noqa: E402
+from eligibility_explainer import explain_eligibility  # noqa: E402
 
 st.set_page_config(
     page_title="Scheme Assistant",
@@ -26,19 +37,7 @@ if "language" not in st.session_state:
 if "view" not in st.session_state:
     st.session_state.view = "Home"
 if "chat_history" not in st.session_state:
-    # Mock conversation so the chat screen has something to show before Phase 5.3
-    st.session_state.chat_history = [
-        {"role": "user", "content": "What is the benefit under PM-KISAN?"},
-        {
-            "role": "assistant",
-            "content": (
-                "Under **PM-KISAN**, eligible farmer families receive Rs. 6,000 per year, "
-                "paid in three installments of Rs. 2,000 every four months via DBT."
-            ),
-            "source": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
-            "link": "https://pmkisan.gov.in",
-        },
-    ]
+    st.session_state.chat_history = []
 
 # --- Sidebar: language selector + navigation --------------------------------
 with st.sidebar:
@@ -89,24 +88,32 @@ Gujarat state-specific schemes.
 # =============================================================================
 elif st.session_state.view == "Chat":
     st.header("💬 Chat")
-    st.caption("Ask a question in English, Hindi, or Gujarati — mock conversation shown below.")
+    st.caption("Ask a question in English, Hindi, or Gujarati.")
 
     for message in st.session_state.chat_history:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
-            if message["role"] == "assistant" and "source" in message:
-                st.caption(f"📄 Source: {message['source']} · [Official link]({message['link']})")
+            if message["role"] == "assistant" and message.get("sources"):
+                source_lines = " · ".join(
+                    f"[{s['name']}]({s['official_link']})" for s in message["sources"]
+                )
+                st.caption(f"📄 Sources: {source_lines}")
 
-    user_input = st.chat_input("Type your question here... (not wired to backend yet)")
+    user_input = st.chat_input("Type your question here...")
     if user_input:
         st.session_state.chat_history.append({"role": "user", "content": user_input})
+
+        with st.spinner("Searching schemes and generating an answer..."):
+            try:
+                result = answer_question_multilingual(user_input)
+                answer_text = result["answer"]
+                sources = result["sources"]
+            except Exception as e:
+                answer_text = f"Sorry, something went wrong while answering ({type(e).__name__}). Please try again."
+                sources = []
+
         st.session_state.chat_history.append(
-            {
-                "role": "assistant",
-                "content": "*(placeholder response - real answers wired in Phase 5.3)*",
-                "source": "N/A",
-                "link": "#",
-            }
+            {"role": "assistant", "content": answer_text, "sources": sources}
         )
         st.rerun()
 
@@ -144,14 +151,57 @@ elif st.session_state.view == "Eligibility Checker":
         submitted = st.form_submit_button("Check My Eligibility")
 
     if submitted:
-        st.success("Here are your results (placeholder data - real matching wired in Phase 5.3):")
+        profile = {
+            "age": age,
+            "annual_family_income": annual_family_income,
+            "state": state,
+            "occupation": occupation,
+            "gender": gender,
+            "social_category": social_category,
+            "marital_status": marital_status,
+            "owns_pucca_house": owns_pucca_house,
+            "is_income_tax_payer": is_income_tax_payer,
+            "has_girl_child_under_10": has_girl_child_under_10,
+            "is_pregnant_or_recent_mother": is_pregnant_or_recent_mother,
+        }
 
-        st.subheader("✅ Likely Eligible")
-        st.markdown("- **PM-KISAN** - income support for landholding farmer families")
-        st.markdown("- **PM Jan Dhan Yojana** - zero-balance bank account")
+        with st.spinner("Checking your eligibility across all schemes..."):
+            try:
+                results = check_eligibility(profile)
+            except Exception as e:
+                st.error(f"Sorry, something went wrong while checking eligibility ({type(e).__name__}). Please try again.")
+                results = None
 
-        st.subheader("❓ Check Manually")
-        st.markdown("- **Ayushman Bharat (PMJAY)** - requires SECC/BPL verification, please confirm at your nearest CSC")
+        if results:
+            eligible = {sid: r for sid, r in results.items() if r["status"] == "likely_eligible"}
+            review = {sid: r for sid, r in results.items() if r["status"] == "check_manually"}
+            not_eligible = {sid: r for sid, r in results.items() if r["status"] == "likely_not_eligible"}
 
-        st.subheader("❌ Likely Not Eligible")
-        st.markdown("- **Manav Garima Yojana** - occupation does not match required category")
+            st.success(f"Checked all {len(results)} schemes.")
+
+            language_lower = st.session_state.language.lower()
+
+            st.subheader(f"✅ Likely Eligible ({len(eligible)})")
+            if eligible:
+                with st.spinner("Preparing explanations..."):
+                    for sid, r in eligible.items():
+                        explanation = explain_eligibility(r, profile, language_lower)
+                        st.markdown(f"**{r['name']}**")
+                        st.markdown(explanation)
+            else:
+                st.caption("No schemes matched in this category.")
+
+            st.subheader(f"❓ Check Manually ({len(review)})")
+            if review:
+                with st.spinner("Preparing explanations..."):
+                    for sid, r in review.items():
+                        explanation = explain_eligibility(r, profile, language_lower)
+                        st.markdown(f"**{r['name']}**")
+                        st.markdown(explanation)
+            else:
+                st.caption("No schemes in this category.")
+
+            with st.expander(f"❌ Likely Not Eligible ({len(not_eligible)})"):
+                for sid, r in not_eligible.items():
+                    reason_text = "; ".join(r["reasons"]) if r["reasons"] else "did not meet eligibility criteria"
+                    st.markdown(f"**{r['name']}** — {reason_text}")
